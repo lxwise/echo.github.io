@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>不曾留得桃花影</title>
+  
+  
+  <link href="/echo.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://lxwise.github.io/echo.github.io/"/>
+  <updated>2020-04-14T07:39:37.360Z</updated>
+  <id>https://lxwise.github.io/echo.github.io/</id>
+  
+  <author>
+    <name>echo</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>方法的重载和重写</title>
+    <link href="https://lxwise.github.io/echo.github.io/posts/deb049e1/"/>
+    <id>https://lxwise.github.io/echo.github.io/posts/deb049e1/</id>
+    <published>2018-11-09T01:54:08.000Z</published>
+    <updated>2020-04-14T07:39:37.360Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>方法的重載（overload） loading…</strong></p><ul><li>1.定義：在同一个类中，允许存在一个以上的同名方法，只要它们的参数个数或者参数类型不同即可。<pre><code>简单的说就是“**同一个类中，方法名相同**！**方法的参数不同**”</code></pre> 2.举例如：<br> //返回两个整数的和<pre><code>int add(int x,int y){return x+y;}//返回三个整数的和int add(int x,int y,int z){return x+y+z;}</code></pre> 3.判断是否是重载<br> 跟方法的权限修饰符，返回值类型，形参变量名，方法体都没关系<br> <strong><em>代码示例：</em></strong></li></ul><pre><code>public void getSum(int i,int j) {    System.out.println("1");}public void getSum(double d1, double d2) {    System.out.println("2");}public void getSum(String s,int i) {    System.out.println("3");}</code></pre><p><strong>方法重写（override/overwrite）</strong><br>1.重写：子类继承父类以后，可以对父类中同名同参数的方法，进行覆盖操作</p><p>  2.应用：重写以后，创建子类对象，通过子类对象调用子父类中同名同参数的方法时，实际调用的是子类中重写父类的方法。</p><p> 3.重写的规定：<br>    方法的声明：权限修饰符  返回值类型  方法名（形参列表） throws 异常类型{<br>                     //方法体<br>                                }<br>                    约定俗称：子类中的叫重写的方法，父类中的叫被重写的方法</p><p>①子类重写的方法的方法名和形参列表与父类被重写的方法的方法名和形参列表相同<br>    ②子类重写的方法的权限修饰符不小于父类被重写方法的权限修饰符<br>             &gt;特殊情况：子类不能重写父类中声明为private权限的方法<br>        ③返回值类型：<br>            &gt;父类被重写的方法的返回值类型是void，则子类重写的方法的返回值类型只能是void<br>            &gt;父类被重写的方法的返回值类型是A类型，则子类重写的方法的返回值类型可以是A类或A类的子类<br>        &gt;父类被重写的方法的返回值类型是基本数据类型（比如int），则子类重写的方法的返回值类型必须是相同的基本数据类型（必须是int）<br>        ④ 子类重写的方法抛出的异常类型不大于父类被重写的方法抛出的异常类型</p><pre><code>注：实际开发中如果想重写方法，可以直接把父类中的方法声明，复制到子类写方法体就行    特别注意：子类和父类的同名同参数的方法要么都声明为非static的（考虑重写），要么都声明为static的（静态的方法不能被重写）</code></pre><p><strong>代码示例:</strong><br>public class Person {</p><pre><code>String name;int age;public Person() {}public Person(String name,int age) {    this.name = name;    this.age = age;}public void eat() {    System.out.println("吃飯");}</code></pre><p>/<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>/<br>public class Student extends Person{</p><pre><code>String major;public Student() {}public Student(String major) {    this.major = major;}//对父类中的eat方法进行重写public void eat() {    System.out.println("多吃素菜！!");}</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;方法的重載（overload） loading…&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1.定義：在同一个类中，允许存在一个以上的同名方法，只要它们的参数个数或者参数类型不同即可。&lt;pre&gt;&lt;code&gt;简单的说就是“**同一个类中，方法名相同**！**
+      
+    
+    </summary>
+    
+    
+      <category term="-java基础" scheme="https://lxwise.github.io/echo.github.io/categories/java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="-java" scheme="https://lxwise.github.io/echo.github.io/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>你好,Hexo</title>
+    <link href="https://lxwise.github.io/echo.github.io/posts/355600e0/"/>
+    <id>https://lxwise.github.io/echo.github.io/posts/355600e0/</id>
+    <published>2018-11-07T01:54:08.000Z</published>
+    <updated>2020-04-14T07:37:36.987Z</updated>
+    
+    <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+        
+      
+    
+    </summary>
+    
+    
+      <category term="-hexo" scheme="https://lxwise.github.io/echo.github.io/categories/hexo/"/>
+    
+    
+      <category term="-博客" scheme="https://lxwise.github.io/echo.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://lxwise.github.io/echo.github.io/posts/4a17b156/"/>
+    <id>https://lxwise.github.io/echo.github.io/posts/4a17b156/</id>
+    <published>2018-11-07T01:37:55.802Z</published>
+    <updated>2020-04-14T07:37:49.104Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+      <category term="-hexo" scheme="https://lxwise.github.io/echo.github.io/categories/hexo/"/>
+    
+    
+      <category term="-博客" scheme="https://lxwise.github.io/echo.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+</feed>
