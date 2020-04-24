@@ -3,11 +3,11 @@
   <title>不曾留得桃花影</title>
   
   
-  <link href="/echo.github.io/atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
-  <link href="https://lxwise.github.io/echo.github.io/"/>
+  <link href="http://39.99.158.50/"/>
   <updated>2020-04-14T07:39:37.360Z</updated>
-  <id>https://lxwise.github.io/echo.github.io/</id>
+  <id>http://39.99.158.50/</id>
   
   <author>
     <name>echo</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>方法的重载和重写</title>
-    <link href="https://lxwise.github.io/echo.github.io/posts/deb049e1/"/>
-    <id>https://lxwise.github.io/echo.github.io/posts/deb049e1/</id>
+    <link href="http://39.99.158.50/posts/deb049e1/"/>
+    <id>http://39.99.158.50/posts/deb049e1/</id>
     <published>2018-11-09T01:54:08.000Z</published>
     <updated>2020-04-14T07:39:37.360Z</updated>
     
@@ -37,17 +37,17 @@
     </summary>
     
     
-      <category term="-java基础" scheme="https://lxwise.github.io/echo.github.io/categories/java%E5%9F%BA%E7%A1%80/"/>
+      <category term="-java基础" scheme="http://39.99.158.50/categories/java%E5%9F%BA%E7%A1%80/"/>
     
     
-      <category term="-java" scheme="https://lxwise.github.io/echo.github.io/tags/java/"/>
+      <category term="-java" scheme="http://39.99.158.50/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>你好,Hexo</title>
-    <link href="https://lxwise.github.io/echo.github.io/posts/355600e0/"/>
-    <id>https://lxwise.github.io/echo.github.io/posts/355600e0/</id>
+    <link href="http://39.99.158.50/posts/355600e0/"/>
+    <id>http://39.99.158.50/posts/355600e0/</id>
     <published>2018-11-07T01:54:08.000Z</published>
     <updated>2020-04-14T07:37:36.987Z</updated>
     
@@ -67,17 +67,17 @@
     </summary>
     
     
-      <category term="-hexo" scheme="https://lxwise.github.io/echo.github.io/categories/hexo/"/>
+      <category term="-hexo" scheme="http://39.99.158.50/categories/hexo/"/>
     
     
-      <category term="-博客" scheme="https://lxwise.github.io/echo.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="-博客" scheme="http://39.99.158.50/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://lxwise.github.io/echo.github.io/posts/4a17b156/"/>
-    <id>https://lxwise.github.io/echo.github.io/posts/4a17b156/</id>
+    <link href="http://39.99.158.50/posts/4a17b156/"/>
+    <id>http://39.99.158.50/posts/4a17b156/</id>
     <published>2018-11-07T01:37:55.802Z</published>
     <updated>2020-04-14T07:37:49.104Z</updated>
     
@@ -93,10 +93,10 @@
     </summary>
     
     
-      <category term="-hexo" scheme="https://lxwise.github.io/echo.github.io/categories/hexo/"/>
+      <category term="-hexo" scheme="http://39.99.158.50/categories/hexo/"/>
     
     
-      <category term="-博客" scheme="https://lxwise.github.io/echo.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="-博客" scheme="http://39.99.158.50/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
