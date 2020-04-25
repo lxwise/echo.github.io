@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="contact, 不曾留得桃花影">
+    <meta name="keywords" content="使用Hexo和github搭建自己的博客超详细奶妈级别教程（一）, 不曾留得桃花影">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>contact | 不曾留得桃花影</title>
+    <title>使用Hexo和github搭建自己的博客超详细奶妈级别教程（一） | 不曾留得桃花影</title>
     <link rel="icon" type="image/png" href="/medias/logo.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -316,12 +316,12 @@ daovoice('update');
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">contact</h1>
+                    <h1 class="description center-align post-title">使用Hexo和github搭建自己的博客超详细奶妈级别教程（一）</h1>
                 </div>
             </div>
         </div>
@@ -444,12 +444,25 @@ daovoice('update');
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/hexo/">
+                                <span class="chip bg-color">-hexo</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/hexo/" class="post-category">
+                                -hexo
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -458,7 +471,7 @@ daovoice('update');
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-04-25
+                    2019-06-25
                 </div>
                 
 
@@ -467,14 +480,14 @@ daovoice('update');
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    52
+                    1.8k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    7 分
                 </div>
                 
 
@@ -489,7 +502,120 @@ daovoice('update');
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <script>
+                <p>[TOC]</p>
+<h1 id="入门简介"><a href="#入门简介" class="headerlink" title="入门简介"></a>入门简介</h1><p>博客有第三方平台，也可以自建，比较早的有博客园、CSDN，近几年新兴的也比较多诸如：WordPress、segmentFault、简书、掘金、知乎专栏、Github Page 等等。今天我们学习的是Hexo+Github的方式。</p>
+<p>Github Pages可以被认为是用户编写的、托管在github上的静态网页。使用Github Pages可以为你提供一个免费的服务器，免去了自己搭建服务器和写数据库的麻烦。此外还可以绑定自己的域名。</p>
+<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<h1 id="环境安装"><a href="#环境安装" class="headerlink" title="环境安装"></a>环境安装</h1><h2 id="Git安装"><a href="#Git安装" class="headerlink" title="Git安装"></a>Git安装</h2><p>百度搜索git，点击进入<img src="C:\Users\liuxin\AppData\Local\Temp\1587810948778.png" alt="58781094877"></p>
+<blockquote>
+<p><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">点击Downloads</a></p>
+</blockquote>
+<p><img src="C:\Users\liuxin\AppData\Local\Temp\1587810983534.png" alt="58781098353"></p>
+<p><img src="C:\Users\liuxin\AppData\Local\Temp\1587811169062.png" alt="58781116906"></p>
+<p>不知道的朋友可以鼠标右击此电脑（或我的电脑）点属性就可以看到了<img src="C:\Users\liuxin\AppData\Local\Temp\1587811277805.png" alt="58781127780"></p>
+<p>然后无限下一步安装就行了（注意安装目录不要有中文字符和空格）</p>
+<p>git安装好在任何一个文件夹右击鼠标后出现以下选项，证明Git安装好了</p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY1MGVjMjA5Mi5wbmc" alt="img"></p>
+<h2 id="安装Nodejs"><a href="#安装Nodejs" class="headerlink" title="安装Nodejs"></a>安装Nodejs</h2><p>百度搜索nodejs或直接<a href="https://nodejs.org/zh-cn/download/" target="_blank" rel="noopener">点击此处进入下载官网</a></p>
+<p><img src="C:\Users\liuxin\AppData\Local\Temp\1587812838030.png" alt="58781283803"></p>
+<p>然后无限下一步安装就行</p>
+<h4 id="检验Git是否安装成功"><a href="#检验Git是否安装成功" class="headerlink" title="检验Git是否安装成功"></a>检验Git是否安装成功</h4><p>在桌面右键鼠标，可以看到菜单里多了 Git GUI Here 和 Git Bash Here两个选项，第一个是图形界面的Git操作，另一个是命令行，选择第二个</p>
+<p><code>输入</code></p>
+<p>git –version  </p>
+<p>node -v<br>npm -v</p>
+<p>如果出现版本号则表示安装成功</p>
+<p><img src="C:\Users\liuxin\AppData\Local\Temp\1587813222488.png" alt="58781322248"></p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>新建一个文件夹如：我的文件夹为：D\blog），博客相关文件将储存在此文件夹下，在该文件夹下右键鼠标，点击 Git Bash Here，输入以下 npm 命令即可安装，第一个命令表示安装 hexo，第二个命令表示安装 hexo 部署到 git page 的 deployer，如图所示即为安装成功</p>
+<p><code>npm install hexo-cli -g</code><br><code>npm install hexo-deployer-git --save</code></p>
+<p><img src="C:\Users\liuxin\AppData\Local\Temp\1587815467010.png" alt="58781546701"></p>
+<p>  <img src="C:\Users\liuxin\AppData\Local\Temp\1587815492340.png" alt="58781549234"></p>
+<h3 id="Hexo配置"><a href="#Hexo配置" class="headerlink" title="Hexo配置"></a>Hexo配置</h3><p>在创的文件夹下右键鼠标，点击 Git Bash Here，输入以下命令，如图所示则安装成功</p>
+<p><code>hexo init</code></p>
+<p><img src="C:\Users\liuxin\AppData\Local\Temp\1587815842110.png" alt="58781584211"><img src="C:\Users\liuxin\AppData\Local\Temp\1587815854790.png" alt="58781585479"></p>
+<p>Hexo安装完成后，将在blog目录中新建所需要的文件，如下</p>
+<p><img src="C:\Users\liuxin\AppData\Local\Temp\1587816008586.png" alt="58781600858"></p>
+<h3 id="Hexo使用命令"><a href="#Hexo使用命令" class="headerlink" title="Hexo使用命令"></a>Hexo使用命令</h3><p><code>hexo  sever ： #启动博客程序</code></p>
+<p><code>hexo clean： #用来清理缓存文件</code></p>
+<p><code>hexo g  ：    #生成文件</code><br><code>hexo  s   ：  #运行本地服务器</code><br><code>hexo  d   ： #上传到服务器</code></p>
+<p>出现如下界面就可以访问博客啦，在浏览器地址栏输入<a href="http://localhost:4000就可以访问了" target="_blank" rel="noopener">http://localhost:4000就可以访问了</a></p>
+<p><img src="C:\Users\liuxin\AppData\Local\Temp\1587816255256.png" alt="58781625525"></p>
+<p>访问页面</p>
+<p><img src="https://img-blog.csdnimg.cn/20190914225716928.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNjg0NjIx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h1 id="将博客部署到Github上"><a href="#将博客部署到Github上" class="headerlink" title="将博客部署到Github上"></a>将博客部署到Github上</h1><h2 id="注册Github账户"><a href="#注册Github账户" class="headerlink" title="注册Github账户"></a>注册Github账户</h2><p>点击此处访问<a href="https://github.com/" target="_blank" rel="noopener">github官网</a>，点击 Sign Up 注册账户</p>
+<p>登录后点击<img src="C:\Users\liuxin\AppData\Local\Temp\1587816614058.png" alt="58781661405"></p>
+<p><img src="C:\Users\liuxin\AppData\Local\Temp\1587816994077.png" alt="58781699407"></p>
+<h2 id="配置SSH密钥"><a href="#配置SSH密钥" class="headerlink" title="配置SSH密钥"></a>配置SSH密钥</h2><p>只有配置好 SSH 密钥后，我们才可以通过 git 操作实现本地代码库与 Github 代码库同步，在你第一次新建的文件夹里面（如：我的文件夹为：D\blog） Git Bash Here 输入以下命令：</p>
+<p> <code>$ ssh-keygen -t rsa -C "your email@example.com"</code><br> <code>//引号里面填写你的邮箱地址</code></p>
+<p>之后会出现：</p>
+<p> <code>Generating public/private rsa key pair.</code><br> Enter file in which to save the key (/c/Users/you/.ssh/id_rsa):<br> <code>//到这里可以直接回车将密钥按默认文件进行存储</code></p>
+<p>然后会出现：</p>
+<p> <code>Enter passphrase (empty for no passphrase):</code><br> //这里是要你输入密码，其实不需要输什么密码，直接回车就行<br> <code>Enter same passphrase again:</code>  </p>
+<p>接下来屏幕会显示：</p>
+<p> <code>Your identification has been saved in /c/Users/you/.ssh/id_rsa.</code><br> Your public key has been saved in /c/Users/you/.ssh/id_rsa.pub.<br> The key fingerprint is:<br> 这里是各种字母数字组成的字符串，结尾是你的邮箱<br> The key’s randomart image is:<br> <code>这里也是各种字母数字符号组成的字符串</code>  </p>
+<p>运行以下命令，将公钥的内容复制到系统粘贴板上也可以去C盘的用户目录下</p>
+<p>比如我的C:\Users\liuxin\.ssh找到id_rsa.pub打开复制</p>
+<p> <code>$ clip &lt; ~/.ssh/id_rsa.pub</code></p>
+<h2 id="GitHub-账户中添加你的公钥"><a href="#GitHub-账户中添加你的公钥" class="headerlink" title="GitHub 账户中添加你的公钥"></a>GitHub 账户中添加你的公钥</h2><p>①登陆 GitHub，进入 Settings：</p>
+<p><img src="C:\Users\liuxin\AppData\Local\Temp\1587817551001.png" alt="58781755100"></p>
+<p><img src="C:\Users\liuxin\AppData\Local\Temp\1587817618481.png" alt="58781761848"></p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY2M2ViMWFiMi5wbmc" alt="img"></p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY2YmMxZmM4Ny5wbmc" alt="img"></p>
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>输入以下命令：注意：<a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>不要做任何更改！</p>
+<p><code>ssh -T git@github.com</code></p>
+<p>之后会显示：</p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY2ZTNiNDgwMy5wbmc" alt="img"></p>
+<p>输入 yes 后会显示：</p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY3MDJjNDZkNi5wbmc" alt="img"></p>
+<p>此时表示设置正确</p>
+<h2 id="配置Git个人信息"><a href="#配置Git个人信息" class="headerlink" title="配置Git个人信息"></a>配置Git个人信息</h2><p>Git 会根据用户的名字和邮箱来记录提交，GitHub 也是用这些信息来做权限的处理</p>
+<p><code>git config --global user.name "此处填你的用户名"</code><br><code>git config --global user.email  "此处填你的邮箱"</code></p>
+<p>到此为止 SSH Key 配置成功，本机已成功连接到 Github</p>
+<h2 id="将本地的-Hexo-文件更新到-Github-的库中"><a href="#将本地的-Hexo-文件更新到-Github-的库中" class="headerlink" title="将本地的 Hexo 文件更新到 Github 的库中"></a>将本地的 Hexo 文件更新到 Github 的库中</h2><p>登录 Github 打开自己的项目 your name.github.io</p>
+<p>鼠标移到 Clone or download 按钮，选择 Use SSH</p>
+<p><img src="C:\Users\liuxin\AppData\Local\Temp\1587817981652.png" alt="58781798165"></p>
+<p><img src="C:\Users\liuxin\AppData\Local\Temp\1587818016967.png" alt="58781801696"></p>
+<p>打开你创建的文件夹（如：D:\blog）打开该文件夹下的 _config.yml 文件,我的是部署过得所以文件比你们的多</p>
+<p><img src="C:\Users\liuxin\AppData\Local\Temp\1587818124088.png" alt="58781812408"></p>
+<p><img src="C:\Users\liuxin\AppData\Local\Temp\1587818433505.png" alt="58781843350"></p>
+<p>然后在D/blog目录下点击 Git Bash Here输入以下命令</p>
+<p><code>hexo g</code><br> hexo d</p>
+<p>或直接执行</p>
+<p><code>hexo g -d</code></p>
+<p>执行完之后会让你输入你的 Github 的账号和密码，如果此时报以下错误，说明你的 deployer 没有安装成功</p>
+<p> <code>ERROR Deployer not found: git</code></p>
+<p>需要执行以下命令再安装一次：</p>
+<p> <code>npm install hexo-deployer-git --save</code></p>
+<p>再执行 <code>hexo g -d</code>，你的博客就会部署到 Github 上了</p>
+<h2 id="访问博客"><a href="#访问博客" class="headerlink" title="访问博客"></a>访问博客</h2><p>进入你的项目点击settings,选择Options，往下翻找到GitHub Pages里面就是你的博客地址，现在每个人都可以通过此链接访问你的博客了！</p>
+<p><img src="C:\Users\liuxin\AppData\Local\Temp\1587818820623.png" alt="58781882062"></p>
+<p><img src="C:\Users\liuxin\AppData\Local\Temp\1587818870116.png" alt="58781887011"></p>
+<h1 id="Hexo博客发表文章"><a href="#Hexo博客发表文章" class="headerlink" title="Hexo博客发表文章"></a>Hexo博客发表文章</h1><h3 id="新建一个空文章"><a href="#新建一个空文章" class="headerlink" title="新建一个空文章"></a>新建一个空文章</h3><p>输入以下命令，会在项目D:\blog\source_posts中生成 文章标题.md 文件，文章标题根据需要命名</p>
+<p><code>hexo n "文章标题"</code></p>
+<p>也可以直接在D:\blog\source_posts目录下右键鼠标新建文本文档，改后缀为 .md 即可，这种方法比较方便</p>
+<h3 id="用编辑器编写文章"><a href="#用编辑器编写文章" class="headerlink" title="用编辑器编写文章:"></a>用编辑器编写文章:</h3><h3 id="推荐几款好用的md编辑器"><a href="#推荐几款好用的md编辑器" class="headerlink" title="推荐几款好用的md编辑器"></a>推荐几款好用的md编辑器</h3><p>md 全称 Markdown</p>
+<p>1.Typora</p>
+<p>2.MarkdownPad2</p>
+<p>3.BookPad</p>
+<p>4.小书匠</p>
+<p>5.Sublime Text 3</p>
+<p>文章标题，标签，分类，封面图片，摘要等，可以在 Front-matter 里面配置（Front-matter 是文件最上方以 — 分隔的区域，用于指定个别文件的变量，官方文档：<a href="https://hexo.io/zh-cn/docs/front-matter" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/front-matter</a> ），举个例子：</p>
+<hr>
+<p>layout: 页面布局（配合主题文档使用）<br>title: 文章名称<br>date: 文章日期<br>comments: 文章是否开启评论<br>photos: 文章封面图（仅部分主题支持）<br>tags: </p>
+<ul>
+<li>文章标签一</li>
+<li>文章标签二<br>categories: 文章分类<br>description: 文章描述，即要在首页显示的摘要（仅部分主题支持）</li>
+</ul>
+<hr>
+<p><code>这里是摘要</code></p>
+<p><code>&lt;!-- more --&gt;</code></p>
+<p><code>这里是正文</code></p>
+<p><code>注意：description 和 &lt;!-- more --&gt; 方式显示摘要二选一即可，部分主题不支持description，每个配置英文冒号后面要空一格，不同主题配置有所差异，具体要参考主题文档</code></p>
+<p>当我们用编辑器写好文章后，可以使用以下命令将其推送到服务器上</p>
+<p> <code>hexo clean</code></p>
+<p><code>hexo g</code></p>
+<p><code>hexo d</code></p>
+<p>现在访问你的博客就可以看见写好的文章啦！</p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -532,7 +658,7 @@ daovoice('update');
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://39.99.158.50/contact/index-1.html">http://39.99.158.50/contact/index-1.html</a>
+                    <a href="http://39.99.158.50/2019/06/25/shi-yong-hexo-he-github-da-jian-zi-ji-de-bo-ke-chao-xiang-xi-nai-ma-ji-bie-jiao-cheng-yi/">http://39.99.158.50/2019/06/25/shi-yong-hexo-he-github-da-jian-zi-ji-de-bo-ke-chao-xiang-xi-nai-ma-ji-bie-jiao-cheng-yi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -569,7 +695,11 @@ daovoice('update');
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/hexo/">
+                                    <span class="chip bg-color">-hexo</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -740,37 +870,47 @@ daovoice('update');
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/contact/index-1.html">
+                <a href="/2019/06/25/shi-yong-hexo-he-github-da-jian-zi-ji-de-bo-ke-chao-xiang-xi-nai-ma-ji-bie-jiao-cheng-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="contact">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="使用Hexo和github搭建自己的博客超详细奶妈级别教程（一）">
                         
-                        <span class="card-title">contact</span>
+                        <span class="card-title">使用Hexo和github搭建自己的博客超详细奶妈级别教程（一）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return
+                            [TOC]
+入门简介博客有第三方平台，也可以自建，比较早的有博客园、CSDN，近几年新兴的也比较多诸如：WordPress、segmentFault、简书、掘金、知乎专栏、Github Page 等等。今天我们学习的是Hexo+Github
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-25
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-06-25
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            echo
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/hexo/" class="post-category">
+                                    -hexo
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">-hexo</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -778,40 +918,51 @@ daovoice('update');
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/contact/index-1.html">
+                <a href="/2018/11/09/fang-fa-de-chong-zai-overload-he-chong-xie-override-overwrite/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="contact">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="方法的重载和重写">
                         
-                        <span class="card-title">contact</span>
+                        <span class="card-title">方法的重载和重写</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return
+                            方法的重載（overload） loading…
+
+1.定義：在同一个类中，允许存在一个以上的同名方法，只要它们的参数个数或者参数类型不同即可。简单的说就是“**同一个类中，方法名相同**！**方法的参数不同**”
+ 2.举例如： //返回
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-25
+                                <i class="far fa-clock fa-fw icon-date"></i>2018-11-09
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            echo
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/java基础/" class="post-category">
+                                    -java基础
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/java/">
+                        <span class="chip bg-color">-java</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
