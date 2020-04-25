@@ -39,8 +39,8 @@
 daovoice('update');
 </script>
 
-<link rel="alternate" href="/atom.xml" title="不曾留得桃花影" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="alternate" href="/atom.xml" title="不曾留得桃花影" type="application/atom+xml">
+</head>
 
 
 <body>
@@ -342,7 +342,7 @@ daovoice('update');
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/6.jpg)');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
 </script>
 
 
@@ -598,6 +598,33 @@ daovoice('update');
             </div>
         </div>
         <div class="card">
+
+            
+            <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '2809cf56c62350ec8c46',
+        clientSecret: '91ca61d0a8cd766316630b1ba4bcab3a88063e3a',
+        repo: 'lxwise.github.io',
+        owner: 'lxwise',
+        admin: "lxwise",
+        id: '2020-04-24T22-16-03',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
 
             
 
