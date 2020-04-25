@@ -172,7 +172,7 @@ code {
     z-index: 1;
     filter: invert(50%);
     cursor: pointer;
-}
+} 
 
 .code-expand {
     position: absolute;
@@ -249,13 +249,11 @@ mark {
     margin-bottom: 0;
 }
 
+/*主题颜色*/
 .bg-color {
-      background-image: linear-gradient(to right, #EE6E73 0%,  #ffffff 100%); 
-    /*修改成自己喜欢的颜色值*/
-    opacity: 1;  
-    /*透明效果 值范围 0~1*/
+    background-image: linear-gradient(to right, #BF4643 0%, #6C9D8F 100%);
+    opacity: 0.6;
 }
-
 
 .text-color {
     color: #0f9d58 !important;
@@ -311,11 +309,11 @@ header .brand-logo .logo-img {
 header .brand-logo .logo-span {
     font-size: 2rem;
 }
-
 /*修改顶部 logo 的文字垂直对齐为 top，避免默认 middle 看起来偏下*/
 header .brand-logo .waves-effect {
     vertical-align: top;
 }
+
 
 header .button-collapse i {
     font-size: 1.5rem;
@@ -567,14 +565,6 @@ header .go-back i {
 .bg-cover:after {
     -webkit-animation: rainbow 60s infinite;
     animation: rainbow 60s infinite;
-	animation-duration: 60s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: rainbow;
 }
 
 .bg-cover:before,
@@ -615,7 +605,7 @@ header .go-back i {
     font-weight: 400;
 }
 
-@-webkit-keyframes rainbow {
+/*@-webkit-keyframes rainbow {
 
     0%,
     100% {
@@ -706,6 +696,8 @@ header .go-back i {
         background: -webkit-linear-gradient(135deg, rgba(2233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
     }
 }
+
+ */
 
 .index-card {
     margin-top: -10px;
@@ -2006,7 +1998,7 @@ footer .copy-right {
     /* absolute position */
     position: absolute;
     /* set position to right bottom corner of block */
-    right: 0.2em;
+    right: 0;
     bottom: 0;
 }
 
@@ -2021,8 +2013,7 @@ footer .copy-right {
     /* set width and height */
     width: 1em;
     height: 1em;
-    /* fix the problem of hidden failure */
-    margin-top: 0.4em;
+    margin-top: 0.2em;
     /* bg color = bg color under block */
     background: white;
 }
