@@ -4,6 +4,87 @@
   
     
     <entry>
+      <title>Hexo博客主题美化之新增看板娘</title>
+      <link href="/2019/06/26/hexo-bo-ke-zhu-ti-mei-hua-zhi-xin-zeng-kan-ban-niang/"/>
+      <url>/2019/06/26/hexo-bo-ke-zhu-ti-mei-hua-zhi-xin-zeng-kan-ban-niang/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Hexo博客主题美化之新增看板娘"><a href="#Hexo博客主题美化之新增看板娘" class="headerlink" title="Hexo博客主题美化之新增看板娘"></a>Hexo博客主题美化之新增看板娘</h1><h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p><img src="https://img-blog.csdnimg.cn/20190803152152975.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2NzU5MjI0,size_16,color_FFFFFF,t_70" alt="01" style="zoom: 33%;"></p><h3 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h3><p>①首先检查博客主目录下面的 <code>package.json</code>里是否有<br><code>"hexo-helper-live2d": "^3.0.3",</code>依赖，有的话可以先卸载</p><p><code>使用命令：npm uninstall hexo-helper-live2d</code></p><p>②安装模块，如下：</p><p><code>npm install --save hexo-helper-live2d</code></p><p><strong>注意：</strong>命令都是在你的博客主目录执行！！！！</p><p>安装完成之后在<code>package.json</code>会看到安装的model</p><p><img src="https://upload-images.jianshu.io/upload_images/5841000-02a497abe20b74de.png?imageMogr2/auto-orient/strip|imageView2/2/w/607/format/webp" alt="img" style="zoom:50%;"></p><p>此时再去 <code>node_moduels</code>目录下，可以看到有如下文件夹，这些都是动画主配置</p><p><img src="https://raw.githubusercontent.com/lxwise/images/master/img/56212.jpg" alt=""></p><p>③输入以下命令，下载相应的模型，将 packagename 更换成模型名称即可，更多模型选择请点击此处</p><p><code>$ npm install packagename</code></p><p><code>例如：npm install live2d-widget-model-haruto</code></p><p>④打开博客根目录下的 _config.yml 文件，添加如下代码：</p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">live2d:</span><br><span class="line">enable: true</span><br><span class="line">scriptFrom: local</span><br><span class="line">model: </span><br><span class="line">use: live2d-widget-model-haruto #模型名称 就是你下的</span><br><span class="line">display: </span><br><span class="line">position: right  #模型位置</span><br><span class="line">width: 150       #模型宽度</span><br><span class="line">height: 300      #模型高度</span><br><span class="line">mobile: </span><br><span class="line">show: false      #是否在手机端显示</span><br></pre></td></tr></tbody></table></figure><p>设置好过后我们就拥有了一个卡通人物</p><p><img src="https://img-blog.csdnimg.cn/20190803152152975.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2NzU5MjI0,size_16,color_FFFFFF,t_70" alt="01"></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> -hexo -live2d -主题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> live2d </tag>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>live2d看板娘一览图</title>
+      <link href="/2019/06/26/live2d-kan-ban-niang-yi-lan-tu/"/>
+      <url>/2019/06/26/live2d-kan-ban-niang-yi-lan-tu/</url>
+      
+        <content type="html"><![CDATA[<h1 id="live2d看板娘一览图"><a href="#live2d看板娘一览图" class="headerlink" title="live2d看板娘一览图"></a>live2d看板娘一览图</h1><h2 id="模型下载地址：点击移步"><a href="#模型下载地址：点击移步" class="headerlink" title="模型下载地址：点击移步"></a>模型下载地址：<a href="https://github.com/xiazeyu/live2d-widget-models/tree/master/packages" target="_blank" rel="noopener">点击移步</a></h2><h2 id="搭建教程：点击移步"><a href="#搭建教程：点击移步" class="headerlink" title="搭建教程：点击移步"></a>搭建教程：点击移步</h2><h2 id="模型预览"><a href="#模型预览" class="headerlink" title="模型预览"></a>模型预览</h2><h3 id="live2d-widget-model-chitose"><a href="#live2d-widget-model-chitose" class="headerlink" title="live2d-widget-model-chitose"></a>live2d-widget-model-chitose</h3><p><img src="https://img-blog.csdn.net/20181015100606604?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI5MzE4NjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img" style="zoom:50%;"></p><h3 id="live2d-widget-model-epsilon2-1"><a href="#live2d-widget-model-epsilon2-1" class="headerlink" title="live2d-widget-model-epsilon2_1"></a>live2d-widget-model-epsilon2_1</h3><p><img src="https://img-blog.csdn.net/20181015100429940?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI5MzE4NjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img" style="zoom:50%;"></p><h3 id="live2d-widget-model-gf"><a href="#live2d-widget-model-gf" class="headerlink" title="live2d-widget-model-gf"></a>live2d-widget-model-gf</h3><p><img src="https://img-blog.csdn.net/20181015100835122?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI5MzE4NjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img" style="zoom:50%;"></p><h3 id="live2d-widget-model-izumi"><a href="#live2d-widget-model-izumi" class="headerlink" title="live2d-widget-model-izumi"></a>live2d-widget-model-izumi</h3><p><img src="https://img-blog.csdn.net/20181015102110828?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI5MzE4NjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img" style="zoom:50%;"></p><h3 id="live2d-widget-model-koharu"><a href="#live2d-widget-model-koharu" class="headerlink" title="live2d-widget-model-koharu"></a>live2d-widget-model-koharu</h3><p><img src="https://img-blog.csdn.net/201810151022183?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI5MzE4NjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img" style="zoom:50%;"></p><h3 id="live2d-widget-model-miku"><a href="#live2d-widget-model-miku" class="headerlink" title="live2d-widget-model-miku"></a>live2d-widget-model-miku</h3><p><img src="https://img-blog.csdn.net/20181015102327532?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI5MzE4NjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img" style="zoom:50%;"></p><h3 id="live2d-widget-model-ni-j"><a href="#live2d-widget-model-ni-j" class="headerlink" title="live2d-widget-model-ni-j"></a>live2d-widget-model-ni-j</h3><p><img src="https://img-blog.csdn.net/20181015102414321?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI5MzE4NjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img" style="zoom:50%;"></p><h3 id="live2d-widget-model-nico"><a href="#live2d-widget-model-nico" class="headerlink" title="live2d-widget-model-nico"></a>live2d-widget-model-nico</h3><p><img src="https://img-blog.csdn.net/20181015102453206?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI5MzE4NjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img" style="zoom:50%;"></p><h3 id="live2d-widget-model-nietzsche"><a href="#live2d-widget-model-nietzsche" class="headerlink" title="live2d-widget-model-nietzsche"></a>live2d-widget-model-nietzsche</h3><p><img src="https://img-blog.csdn.net/2018101510254979?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI5MzE4NjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img" style="zoom:50%;"></p><h3 id="live2d-widget-model-nipsilon"><a href="#live2d-widget-model-nipsilon" class="headerlink" title="live2d-widget-model-nipsilon"></a>live2d-widget-model-nipsilon</h3><p><img src="https://img-blog.csdn.net/20181015102647354?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI5MzE4NjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img" style="zoom:50%;"></p><h3 id="live2d-widget-model-nito"><a href="#live2d-widget-model-nito" class="headerlink" title="live2d-widget-model-nito"></a>live2d-widget-model-nito</h3><p><img src="https://img-blog.csdn.net/20181015102731948?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI5MzE4NjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img" style="zoom:50%;"></p><h3 id="live2d-widget-model-shizuku"><a href="#live2d-widget-model-shizuku" class="headerlink" title="live2d-widget-model-shizuku"></a>live2d-widget-model-shizuku</h3><p><img src="https://img-blog.csdn.net/20181015102910241?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI5MzE4NjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img" style="zoom:50%;"></p><h3 id="live2d-widget-model-tororo"><a href="#live2d-widget-model-tororo" class="headerlink" title="live2d-widget-model-tororo"></a>live2d-widget-model-tororo</h3><p><img src="https://img-blog.csdn.net/20181015103000497?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI5MzE4NjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img" style="zoom:50%;"></p><h3 id="live2d-widget-model-tsumiki"><a href="#live2d-widget-model-tsumiki" class="headerlink" title="live2d-widget-model-tsumiki"></a>live2d-widget-model-tsumiki</h3><p><img src="https://img-blog.csdn.net/20181015103049940?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI5MzE4NjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img" style="zoom:50%;"></p><h3 id="live2d-widget-model-unitychan"><a href="#live2d-widget-model-unitychan" class="headerlink" title="live2d-widget-model-unitychan"></a>live2d-widget-model-unitychan</h3><p><img src="https://img-blog.csdn.net/20181015103131359?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI5MzE4NjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img" style="zoom:50%;"></p><h3 id="live2d-widget-model-wanko"><a href="#live2d-widget-model-wanko" class="headerlink" title="live2d-widget-model-wanko"></a>live2d-widget-model-wanko</h3><p><img src="https://img-blog.csdn.net/20181015103212982?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI5MzE4NjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img" style="zoom:50%;"></p><h3 id="live2d-widget-model-z16"><a href="#live2d-widget-model-z16" class="headerlink" title="live2d-widget-model-z16"></a>live2d-widget-model-z16</h3><p><img src="https://img-blog.csdn.net/20181015103307586?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI5MzE4NjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img" style="zoom:50%;"></p><h3 id="live2d-widget-model-hibiki"><a href="#live2d-widget-model-hibiki" class="headerlink" title="live2d-widget-model-hibiki"></a>live2d-widget-model-hibiki</h3><p><img src="https://img-blog.csdn.net/20181015103432359?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI5MzE4NjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img" style="zoom:50%;"></p><h3 id="live2d-widget-model-hijiki"><a href="#live2d-widget-model-hijiki" class="headerlink" title="live2d-widget-model-hijiki"></a>live2d-widget-model-hijiki</h3><p><img src="https://img-blog.csdn.net/20181015103506648?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI5MzE4NjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img" style="zoom:50%;"></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> -live2d -主题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> -live2d -hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>使用Hexo为博客更换自己喜欢的主题</title>
+      <link href="/2019/06/26/shi-yong-hexo-wei-bo-ke-geng-huan-zi-ji-xi-huan-de-zhu-ti/"/>
+      <url>/2019/06/26/shi-yong-hexo-wei-bo-ke-geng-huan-zi-ji-xi-huan-de-zhu-ti/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Hexo为博客更换自己喜欢的主题"><a href="#Hexo为博客更换自己喜欢的主题" class="headerlink" title="Hexo为博客更换自己喜欢的主题"></a>Hexo为博客更换自己喜欢的主题</h1><p>博客也搭建好了，文章也会写了,但是默认主题巨丑怎么办，那我们就自定义自己喜欢的主题</p><p><a href="https://hexo.io/themes/" target="_blank" rel="noopener">点击此处</a>进入 Hexo 官网的主题专栏</p><p><img src="https://raw.githubusercontent.com/lxwise/images/master/img/QQ%E6%88%AA%E5%9B%BE20200426200500.png" alt=""></p><p>我们要做的就是把主题克隆过来，在此我们以主题 <a href="https://github.com/nexmoe/hexo-theme-nexmoe" target="_blank" rel="noopener">Nexmoe</a> 为例，点进去我们就可以看见该主题作者的博客，点击Clone or download 复制https地址，在博客根目录的themes（比如我的D:\blog\themes）打开Git命令行输入</p><p><code>git clone https://github.com/theme-nexmoe/hexo-theme-nexmoe.git</code></p><p><img src="https://raw.githubusercontent.com/lxwise/images/master/img/QQ%E6%88%AA%E5%9B%BE20200426201008.png" alt=""></p><p><img src="https://raw.githubusercontent.com/lxwise/images/master/img/2020202020.png" alt=""></p><p><img src="https://raw.githubusercontent.com/lxwise/images/master/img/20200426202143.png" alt=""></p><p>待下载完成后即可在 themes 目录下生成 hexo-theme-nexmoe 文件夹，然后打开 blog 文件夹下的配置文件 _config.yml ，找到关键字 theme，修改参数为：hexo-theme-nexmoe（其他主题修改成相应名称即可），再次注意冒号后面有一个空格！</p><p><img src="https://raw.githubusercontent.com/lxwise/images/master/img/202004262qwe0.jpg" alt=""></p><p><img src="https://raw.githubusercontent.com/lxwise/images/master/img/200426203012.jpg" alt=""></p><p>返回 Hexo 目录，右键 Git Bash Here ，输入以下命令开始部署主题：</p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></tbody></table></figure><p>此时打开浏览器，访问 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 就可看见我们的主题已经更换了，如果感觉效果满意，我们就可以把它部署到Github上了</p><p><code>hexo d</code></p><p>此时访问自己的博客即可看见更换后的主题，但我们仍然需要对主题的相关配置进行修改，比如网站标题，图标等等具体配置请移步<a href="https://docs.nexmoe.com/hexo-nexmoe/start" target="_blank" rel="noopener">《快速开始》</a></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+          <category> 主题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 主题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>使用Hexo和github搭建自己的博客超详细奶妈级别教程</title>
       <link href="/2019/06/25/shi-yong-hexo-he-github-da-jian-zi-ji-de-bo-ke-chao-xiang-xi-nai-ma-ji-bie-jiao-cheng/"/>
       <url>/2019/06/25/shi-yong-hexo-he-github-da-jian-zi-ji-de-bo-ke-chao-xiang-xi-nai-ma-ji-bie-jiao-cheng/</url>
