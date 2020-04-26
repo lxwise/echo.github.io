@@ -5,31 +5,6 @@
     
     <entry>
       <title>使用Hexo和github搭建自己的博客超详细奶妈级别教程（二）为博客更换自己喜欢的主题</title>
-      <link href="/2019/06/26/shi-yong-hexo-he-github-da-jian-zi-ji-de-bo-ke-chao-xiang-xi-nai-ma-ji-bie-jiao-cheng-er-wei-bo-ke-geng-huan-zi-ji-xi-huan-de-zhu-ti/"/>
-      <url>/2019/06/26/shi-yong-hexo-he-github-da-jian-zi-ji-de-bo-ke-chao-xiang-xi-nai-ma-ji-bie-jiao-cheng-er-wei-bo-ke-geng-huan-zi-ji-xi-huan-de-zhu-ti/</url>
-      
-        <content type="html"><![CDATA[<p><a href="http://39.99.158.50/2019/06/25/shi-yong-hexo-he-github-da-jian-zi-ji-de-bo-ke-chao-xiang-xi-nai-ma-ji-bie-jiao-cheng-yi/">使用Hexo和github搭建自己的博客超详细奶妈级别教程</a></p><h1 id="Hexo为博客更换自己喜欢的主题"><a href="#Hexo为博客更换自己喜欢的主题" class="headerlink" title="Hexo为博客更换自己喜欢的主题"></a>Hexo为博客更换自己喜欢的主题</h1><p>博客也搭建好了，文章也会写了,但是默认主题巨丑怎么办，那我们就自定义自己喜欢的主题</p><p><a href="https://hexo.io/themes/" target="_blank" rel="noopener">点击此处</a>进入 Hexo 官网的主题专栏</p><p><img src="https://raw.githubusercontent.com/lxwise/images/master/img/QQ%E6%88%AA%E5%9B%BE20200426200500.png" alt=""></p><p>我们要做的就是把主题克隆过来，在此我们以主题 <a href="https://github.com/nexmoe/hexo-theme-nexmoe" target="_blank" rel="noopener">Nexmoe</a> 为例，点进去我们就可以看见该主题作者的博客，点击Clone or download 复制https地址，在博客根目录的themes（比如我的D:\blog\themes）打开Git命令行输入</p><p><code>git clone https://github.com/theme-nexmoe/hexo-theme-nexmoe.git</code></p><p><img src="https://raw.githubusercontent.com/lxwise/images/master/img/QQ%E6%88%AA%E5%9B%BE20200426201008.png" alt=""></p><p><img src="https://raw.githubusercontent.com/lxwise/images/master/img/2020202020.png" alt=""></p><p><img src="https://raw.githubusercontent.com/lxwise/images/master/img/20200426202143.png" alt=""></p><p>待下载完成后即可在 themes 目录下生成 hexo-theme-nexmoe 文件夹，然后打开 blog 文件夹下的配置文件 _config.yml ，找到关键字 theme，修改参数为：hexo-theme-nexmoe（其他主题修改成相应名称即可），再次注意冒号后面有一个空格！</p><p><img src="https://raw.githubusercontent.com/lxwise/images/master/img/202004262qwe0.jpg" alt=""></p><p><img src="https://raw.githubusercontent.com/lxwise/images/master/img/200426203012.jpg" alt=""></p><p>返回 Hexo 目录，右键 Git Bash Here ，输入以下命令开始部署主题：</p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></tbody></table></figure><p>此时打开浏览器，访问 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 就可看见我们的主题已经更换了，如果感觉效果满意，我们就可以把它部署到Github上了</p><p><code>hexo d</code></p><p>此时访问自己的博客即可看见更换后的主题，但我们仍然需要对主题的相关配置进行修改，比如网站标题，图标等等具体配置请移步<a href="https://docs.nexmoe.com/hexo-nexmoe/start" target="_blank" rel="noopener">《快速开始》</a></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      <categories>
-          
-          <category> -hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> -hexo -主题 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>使用Hexo和github搭建自己的博客超详细奶妈级别教程（二）为博客更换自己喜欢的主题</title>
       <link href="/2019/06/26/shi-yong-hexo-wei-bo-ke-geng-huan-zi-ji-xi-huan-de-zhu-ti/"/>
       <url>/2019/06/26/shi-yong-hexo-wei-bo-ke-geng-huan-zi-ji-xi-huan-de-zhu-ti/</url>
       
