@@ -50,7 +50,7 @@ daovoice('update');
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/medias/loading.gif" data-original="/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">不曾留得桃花影</span>
                 </a>
@@ -149,7 +149,7 @@ daovoice('update');
 
     <div class="mobile-head bg-color">
         
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/loading.gif" data-original="/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">不曾留得桃花影</div>
         <div class="logo-desc">
@@ -506,23 +506,23 @@ daovoice('update');
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Hexo博客主题美化之新增看板娘"><a href="#Hexo博客主题美化之新增看板娘" class="headerlink" title="Hexo博客主题美化之新增看板娘"></a>Hexo博客主题美化之新增看板娘</h1><h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p><img src="https://img-blog.csdnimg.cn/20190803152152975.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2NzU5MjI0,size_16,color_FFFFFF,t_70" alt="01" style="zoom: 33%;"></p>
+                <h1 id="Hexo博客主题美化之新增看板娘"><a href="#Hexo博客主题美化之新增看板娘" class="headerlink" title="Hexo博客主题美化之新增看板娘"></a>Hexo博客主题美化之新增看板娘</h1><h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p><img src="/medias/loading.gif" data-original="https://img-blog.csdnimg.cn/20190803152152975.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2NzU5MjI0,size_16,color_FFFFFF,t_70" alt="01" style="zoom: 33%;"></p>
 <h3 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h3><p>①首先检查博客主目录下面的 <code>package.json</code>里是否有<br><code>"hexo-helper-live2d": "^3.0.3",</code>依赖，有的话可以先卸载</p>
 <p><code>使用命令：npm uninstall hexo-helper-live2d</code></p>
 <p>②安装模块，如下：</p>
 <p><code>npm install --save hexo-helper-live2d</code></p>
 <p><strong>注意：</strong>命令都是在你的博客主目录执行！！！！</p>
 <p>安装完成之后在<code>package.json</code>会看到安装的model</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/5841000-02a497abe20b74de.png?imageMogr2/auto-orient/strip|imageView2/2/w/607/format/webp" alt="img" style="zoom:50%;"></p>
+<p><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/5841000-02a497abe20b74de.png?imageMogr2/auto-orient/strip|imageView2/2/w/607/format/webp" alt="img" style="zoom:50%;"></p>
 <p>此时再去 <code>node_moduels</code>目录下，可以看到有如下文件夹，这些都是动画主配置</p>
-<p><img src="https://raw.githubusercontent.com/lxwise/images/master/img/56212.jpg" alt=""></p>
+<p><img src="/medias/loading.gif" data-original="https://raw.githubusercontent.com/lxwise/images/master/img/56212.jpg" alt=""></p>
 <p>③输入以下命令，下载相应的模型，将 packagename 更换成模型名称即可，<a href="http://39.99.158.50/2019/06/26/live2d-kan-ban-niang-yi-lan-tu/">更多模型选择请点击此处</a></p>
 <p><code>$ npm install packagename</code></p>
 <p><code>例如：npm install live2d-widget-model-haruto</code></p>
 <p>④打开博客根目录下的 _config.yml 文件，添加如下代码：</p>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">live2d:</span><br><span class="line">	enable: true</span><br><span class="line">	scriptFrom: local</span><br><span class="line">	model: </span><br><span class="line">		use: live2d-widget-model-haruto #模型名称 就是你下的</span><br><span class="line">	display: </span><br><span class="line">		position: right  #模型位置</span><br><span class="line">		width: 150       #模型宽度</span><br><span class="line">		height: 300      #模型高度</span><br><span class="line">	mobile: </span><br><span class="line">		show: false      #是否在手机端显示</span><br></pre></td></tr></tbody></table></figure>
 <p>设置好过后我们就拥有了一个卡通人物</p>
-<p><img src="https://img-blog.csdnimg.cn/20190803152152975.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2NzU5MjI0,size_16,color_FFFFFF,t_70" alt="01"></p>
+<p><img src="/medias/loading.gif" data-original="https://img-blog.csdnimg.cn/20190803152152975.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2NzU5MjI0,size_16,color_FFFFFF,t_70" alt="01"></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -739,10 +739,10 @@ daovoice('update');
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="/medias/loading.gif" data-original="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                        <img src="/medias/loading.gif" data-original="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -813,7 +813,7 @@ daovoice('update');
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Hexo博客主题美化之新增看板娘">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/20.jpg" class="responsive-img" alt="Hexo博客主题美化之新增看板娘">
                         
                         <span class="card-title">Hexo博客主题美化之新增看板娘</span>
                     </div>
@@ -869,7 +869,7 @@ daovoice('update');
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="live2d看板娘一览图">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/16.jpg" class="responsive-img" alt="live2d看板娘一览图">
                         
                         <span class="card-title">live2d看板娘一览图</span>
                     </div>
@@ -1304,6 +1304,6 @@ if (windowWidth > 768) {
 <script type="text/javascript"
 color="220,220,220" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
 </script
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script></body>
 
 </html>

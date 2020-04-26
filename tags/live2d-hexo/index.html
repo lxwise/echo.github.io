@@ -50,7 +50,7 @@ daovoice('update');
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/medias/loading.gif" data-original="/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">不曾留得桃花影</span>
                 </a>
@@ -149,7 +149,7 @@ daovoice('update');
 
     <div class="mobile-head bg-color">
         
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/loading.gif" data-original="/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">不曾留得桃花影</div>
         <div class="logo-desc">
@@ -362,25 +362,9 @@ daovoice('update');
             <div class="tag-chips">
                 
                 
-                <a href="/tags/博客/" title="-博客: 2">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default " data-tagname="-博客" style="background-color: #F9EBEA;">-博客
-                        <span class="tag-length">2</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/live2d-hexo/" title="-live2d -hexo: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-active " data-tagname="-live2d -hexo" style="background-color: #F5EEF8;">-live2d -hexo
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
                 <a href="/tags/live2d/" title="live2d: 1">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default " data-tagname="live2d" style="background-color: #D5F5E3;">live2d
+                             chip-default " data-tagname="live2d" style="background-color: #F9EBEA;">live2d
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -388,7 +372,23 @@ daovoice('update');
                 
                 <a href="/tags/hexo/" title="hexo: 2">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default " data-tagname="hexo" style="background-color: #E8F8F5;">hexo
+                             chip-default " data-tagname="hexo" style="background-color: #F5EEF8;">hexo
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/live2d-hexo/" title="-live2d -hexo: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active " data-tagname="-live2d -hexo" style="background-color: #D5F5E3;">-live2d -hexo
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/博客/" title="-博客: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default " data-tagname="-博客" style="background-color: #E8F8F5;">-博客
                         <span class="tag-length">2</span>
                     </span>
                 </a>
@@ -434,7 +434,7 @@ daovoice('update');
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="live2d看板娘一览图">
+                            <img src="/medias/loading.gif" data-original="/medias/featureimages/16.jpg" class="responsive-img" alt="live2d看板娘一览图">
                             
                             <span class="card-title">live2d看板娘一览图</span>
                         </div>
@@ -689,6 +689,6 @@ if (windowWidth > 768) {
 <script type="text/javascript"
 color="220,220,220" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
 </script
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script></body>
 
 </html>
