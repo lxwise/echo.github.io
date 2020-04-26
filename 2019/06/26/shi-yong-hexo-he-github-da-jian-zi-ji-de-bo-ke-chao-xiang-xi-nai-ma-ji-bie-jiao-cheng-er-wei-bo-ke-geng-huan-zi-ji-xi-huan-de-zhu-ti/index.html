@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="方法的重载和重写, 不曾留得桃花影">
+    <meta name="keywords" content="使用Hexo和github搭建自己的博客超详细奶妈级别教程（二）为博客更换自己喜欢的主题, 不曾留得桃花影">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>方法的重载和重写 | 不曾留得桃花影</title>
+    <title>使用Hexo和github搭建自己的博客超详细奶妈级别教程（二）为博客更换自己喜欢的主题 | 不曾留得桃花影</title>
     <link rel="icon" type="image/png" href="/medias/logo.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -316,12 +316,12 @@ daovoice('update');
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">方法的重载和重写</h1>
+                    <h1 class="description center-align post-title">使用Hexo和github搭建自己的博客超详细奶妈级别教程（二）为博客更换自己喜欢的主题</h1>
                 </div>
             </div>
         </div>
@@ -446,8 +446,8 @@ daovoice('update');
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/java/">
-                                <span class="chip bg-color">-java</span>
+                            <a href="/tags/hexo-主题/">
+                                <span class="chip bg-color">-hexo -主题</span>
                             </a>
                         
                     </div>
@@ -458,8 +458,8 @@ daovoice('update');
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/java基础/" class="post-category">
-                                -java基础
+                            <a href="/categories/hexo/" class="post-category">
+                                -hexo
                             </a>
                         
                     </div>
@@ -471,7 +471,7 @@ daovoice('update');
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-11-09
+                    2019-06-26
                 </div>
                 
 
@@ -480,14 +480,14 @@ daovoice('update');
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    798
+                    434
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    1 分
                 </div>
                 
 
@@ -502,62 +502,24 @@ daovoice('update');
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><strong>方法的重載（overload） loading…</strong></p>
-<ul>
-<li>1.定義：在同一个类中，允许存在一个以上的同名方法，只要它们的参数个数或者参数类型不同即可。<pre><code>简单的说就是“**同一个类中，方法名相同**！**方法的参数不同**”
-</code></pre> 2.举例如：<br> //返回两个整数的和<pre><code>int add(int x,int y){return x+y;}
-//返回三个整数的和
-int add(int x,int y,int z){return x+y+z;}
-</code></pre> 3.判断是否是重载<br> 跟方法的权限修饰符，返回值类型，形参变量名，方法体都没关系<br> <strong><em>代码示例：</em></strong></li>
-</ul>
-<pre><code>public void getSum(int i,int j) {
-    System.out.println("1");
-}
-
-public void getSum(double d1, double d2) {
-    System.out.println("2");
-}
-
-public void getSum(String s,int i) {
-    System.out.println("3");
-}
-</code></pre><p><strong>方法重写（override/overwrite）</strong><br>1.重写：子类继承父类以后，可以对父类中同名同参数的方法，进行覆盖操作</p>
-<p>  2.应用：重写以后，创建子类对象，通过子类对象调用子父类中同名同参数的方法时，实际调用的是子类中重写父类的方法。</p>
-<p> 3.重写的规定：<br>    方法的声明：权限修饰符  返回值类型  方法名（形参列表） throws 异常类型{<br>                     //方法体<br>                                }<br>                    约定俗称：子类中的叫重写的方法，父类中的叫被重写的方法</p>
-<p>①子类重写的方法的方法名和形参列表与父类被重写的方法的方法名和形参列表相同<br>    ②子类重写的方法的权限修饰符不小于父类被重写方法的权限修饰符<br>             &gt;特殊情况：子类不能重写父类中声明为private权限的方法<br>        ③返回值类型：<br>            &gt;父类被重写的方法的返回值类型是void，则子类重写的方法的返回值类型只能是void<br>            &gt;父类被重写的方法的返回值类型是A类型，则子类重写的方法的返回值类型可以是A类或A类的子类<br>        &gt;父类被重写的方法的返回值类型是基本数据类型（比如int），则子类重写的方法的返回值类型必须是相同的基本数据类型（必须是int）<br>        ④ 子类重写的方法抛出的异常类型不大于父类被重写的方法抛出的异常类型</p>
-<pre><code>注：实际开发中如果想重写方法，可以直接把父类中的方法声明，复制到子类写方法体就行
-    特别注意：子类和父类的同名同参数的方法要么都声明为非static的（考虑重写），要么都声明为static的（静态的方法不能被重写）
-</code></pre><p><strong>代码示例:</strong><br>public class Person {</p>
-<pre><code>String name;
-int age;
-
-public Person() {
-
-}
-public Person(String name,int age) {
-    this.name = name;
-    this.age = age;
-}
-
-public void eat() {
-    System.out.println("吃飯");
-}
-</code></pre><p>/<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>/<br>public class Student extends Person{</p>
-<pre><code>String major;
-
-public Student() {
-
-}
-
-public Student(String major) {
-    this.major = major;
-}
-
-//对父类中的eat方法进行重写
-public void eat() {
-    System.out.println("多吃素菜！!");
-}
-</code></pre><script>
+                <p><a href="http://39.99.158.50/2019/06/25/shi-yong-hexo-he-github-da-jian-zi-ji-de-bo-ke-chao-xiang-xi-nai-ma-ji-bie-jiao-cheng-yi/">使用Hexo和github搭建自己的博客超详细奶妈级别教程</a></p>
+<h1 id="Hexo为博客更换自己喜欢的主题"><a href="#Hexo为博客更换自己喜欢的主题" class="headerlink" title="Hexo为博客更换自己喜欢的主题"></a>Hexo为博客更换自己喜欢的主题</h1><p>博客也搭建好了，文章也会写了,但是默认主题巨丑怎么办，那我们就自定义自己喜欢的主题</p>
+<p><a href="https://hexo.io/themes/" target="_blank" rel="noopener">点击此处</a>进入 Hexo 官网的主题专栏</p>
+<p><img src="https://raw.githubusercontent.com/lxwise/images/master/img/QQ%E6%88%AA%E5%9B%BE20200426200500.png" alt=""></p>
+<p>我们要做的就是把主题克隆过来，在此我们以主题 <a href="https://github.com/nexmoe/hexo-theme-nexmoe" target="_blank" rel="noopener">Nexmoe</a> 为例，点进去我们就可以看见该主题作者的博客，点击Clone or download 复制https地址，在博客根目录的themes（比如我的D:\blog\themes）打开Git命令行输入</p>
+<p><code>git clone https://github.com/theme-nexmoe/hexo-theme-nexmoe.git</code></p>
+<p><img src="https://raw.githubusercontent.com/lxwise/images/master/img/QQ%E6%88%AA%E5%9B%BE20200426201008.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/lxwise/images/master/img/2020202020.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/lxwise/images/master/img/20200426202143.png" alt=""></p>
+<p>待下载完成后即可在 themes 目录下生成 hexo-theme-nexmoe 文件夹，然后打开 blog 文件夹下的配置文件 _config.yml ，找到关键字 theme，修改参数为：hexo-theme-nexmoe（其他主题修改成相应名称即可），再次注意冒号后面有一个空格！</p>
+<p><img src="https://raw.githubusercontent.com/lxwise/images/master/img/202004262qwe0.jpg" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/lxwise/images/master/img/200426203012.jpg" alt=""></p>
+<p>返回 Hexo 目录，右键 Git Bash Here ，输入以下命令开始部署主题：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></tbody></table></figure>
+<p>此时打开浏览器，访问 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 就可看见我们的主题已经更换了，如果感觉效果满意，我们就可以把它部署到Github上了</p>
+<p><code>hexo d</code></p>
+<p>此时访问自己的博客即可看见更换后的主题，但我们仍然需要对主题的相关配置进行修改，比如网站标题，图标等等具体配置请移步<a href="https://docs.nexmoe.com/hexo-nexmoe/start" target="_blank" rel="noopener">《快速开始》</a></p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -600,7 +562,7 @@ public void eat() {
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://39.99.158.50/2018/11/09/fang-fa-de-chong-zai-overload-he-chong-xie-override-overwrite/">http://39.99.158.50/2018/11/09/fang-fa-de-chong-zai-overload-he-chong-xie-override-overwrite/</a>
+                    <a href="http://39.99.158.50/2019/06/26/shi-yong-hexo-he-github-da-jian-zi-ji-de-bo-ke-chao-xiang-xi-nai-ma-ji-bie-jiao-cheng-er-wei-bo-ke-geng-huan-zi-ji-xi-huan-de-zhu-ti/">http://39.99.158.50/2019/06/26/shi-yong-hexo-he-github-da-jian-zi-ji-de-bo-ke-chao-xiang-xi-nai-ma-ji-bie-jiao-cheng-er-wei-bo-ke-geng-huan-zi-ji-xi-huan-de-zhu-ti/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -638,8 +600,8 @@ public void eat() {
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/java/">
-                                    <span class="chip bg-color">-java</span>
+                                <a href="/tags/hexo-主题/">
+                                    <span class="chip bg-color">-hexo -主题</span>
                                 </a>
                             
                         </div>
@@ -810,7 +772,7 @@ public void eat() {
         repo: 'lxwise.github.io',
         owner: 'lxwise',
         admin: "lxwise",
-        id: '2018-11-09T09-54-08',
+        id: '2019-06-26T19-58-05',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -836,28 +798,32 @@ public void eat() {
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/06/25/shi-yong-hexo-he-github-da-jian-zi-ji-de-bo-ke-chao-xiang-xi-nai-ma-ji-bie-jiao-cheng/">
+                <a href="/2019/06/26/shi-yong-hexo-he-github-da-jian-zi-ji-de-bo-ke-chao-xiang-xi-nai-ma-ji-bie-jiao-cheng-er-wei-bo-ke-geng-huan-zi-ji-xi-huan-de-zhu-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="使用Hexo和github搭建自己的博客超详细奶妈级别教程（一）">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="使用Hexo和github搭建自己的博客超详细奶妈级别教程（二）为博客更换自己喜欢的主题">
                         
-                        <span class="card-title">使用Hexo和github搭建自己的博客超详细奶妈级别教程（一）</span>
+                        <span class="card-title">使用Hexo和github搭建自己的博客超详细奶妈级别教程（二）为博客更换自己喜欢的主题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            [TOC]
-入门简介博客有第三方平台，也可以自建，比较早的有博客园、CSDN，近几年新兴的也比较多诸如：WordPress、segmentFault、简书、掘金、知乎专栏、Github Page 等等。今天我们学习的是Hexo+Github
+                            使用Hexo和github搭建自己的博客超详细奶妈级别教程
+Hexo为博客更换自己喜欢的主题博客也搭建好了，文章也会写了,但是默认主题巨丑怎么办，那我们就自定义自己喜欢的主题
+点击此处进入 Hexo 官网的主题专栏
+
+我们要做的就是把主题克
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-06-25
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-06-26
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -870,11 +836,12 @@ public void eat() {
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">-hexo</span>
+                    <a href="/tags/hexo-主题/">
+                        <span class="chip bg-color">-hexo -主题</span>
                     </a>
                     
                 </div>
@@ -888,27 +855,27 @@ public void eat() {
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2018/11/07/ni-hao-hexo/">
+                <a href="/2019/06/26/shi-yong-hexo-wei-bo-ke-geng-huan-zi-ji-xi-huan-de-zhu-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="你好,Hexo">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="使用Hexo和github搭建自己的博客超详细奶妈级别教程（二）为博客更换自己喜欢的主题">
                         
-                        <span class="card-title">你好,Hexo</span>
+                        <span class="card-title">使用Hexo和github搭建自己的博客超详细奶妈级别教程（二）为博客更换自己喜欢的主题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return
+                            Hexo为博客更换自己喜欢的主题博客也搭建好了，文章也会写了,但是默认主题巨丑怎么办，那我们就自定义自己喜欢的主题
+点击此处进入 Hexo 官网的主题专栏
+
+我们要做的就是把主题克隆过来，在此我们以主题 Nexmoe 为例，点进去我们就可以
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2018-11-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-06-26
                             </span>
                         <span class="publish-author">
                             
@@ -925,8 +892,8 @@ public void eat() {
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/博客/">
-                        <span class="chip bg-color">-博客</span>
+                    <a href="/tags/hexo-主题/">
+                        <span class="chip bg-color">-hexo -主题</span>
                     </a>
                     
                 </div>
