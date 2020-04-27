@@ -349,7 +349,7 @@ daovoice('update');
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/1.jpg)');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/2.jpg)');
 </script>
 
 
@@ -586,7 +586,7 @@ daovoice('update');
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"-hexo -live2d -主题","value":1},{"name":"-hexo","value":3},{"name":"hexo","value":1},{"name":"-live2d -主题","value":1},{"name":"主题","value":1},{"name":"linux","value":1},{"name":"linux jdk","value":1},{"name":"-java基础","value":1},{"name":"docker","value":1}],
+                data: [{"name":"-hexo -live2d -主题","value":1},{"name":"-hexo","value":3},{"name":"-live2d -主题","value":1},{"name":"hexo","value":1},{"name":"linux jdk","value":1},{"name":"-java基础","value":1},{"name":"linux","value":1},{"name":"主题","value":1},{"name":"docker","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -610,7 +610,7 @@ daovoice('update');
         xAxis: [
             {
                 type: 'category',
-                data: ["hexo","-博客","linux","live2d","主题","-live2d -hexo","-hexo","docker","jdk","-java"]
+                data: ["hexo","-博客","linux","live2d","-live2d -hexo","主题","-hexo","jdk","-java","docker"]
             }
         ],
         yAxis: [
@@ -802,26 +802,20 @@ daovoice('update');
             
             
             
-            <a href="/tags/主题/">
-                <span class="chip center-align waves-effect waves-light chip-default">主题</span>
-            </a>
-            
-            
-            
             <a href="/tags/live2d-hexo/">
                 <span class="chip center-align waves-effect waves-light chip-default">-live2d -hexo</span>
             </a>
             
             
             
-            <a href="/tags/hexo/">
-                <span class="chip center-align waves-effect waves-light chip-default">-hexo</span>
+            <a href="/tags/主题/">
+                <span class="chip center-align waves-effect waves-light chip-default">主题</span>
             </a>
             
             
             
-            <a href="/tags/docker/">
-                <span class="chip center-align waves-effect waves-light chip-default">docker</span>
+            <a href="/tags/hexo/">
+                <span class="chip center-align waves-effect waves-light chip-default">-hexo</span>
             </a>
             
             
@@ -840,6 +834,12 @@ daovoice('update');
             
             <a href="/tags/java/">
                 <span class="chip center-align waves-effect waves-light chip-default">-java</span>
+            </a>
+            
+            
+            
+            <a href="/tags/docker/">
+                <span class="chip center-align waves-effect waves-light chip-default">docker</span>
             </a>
             
             
@@ -1124,6 +1124,6 @@ if (windowWidth > 768) {
 <script type="text/javascript"
 color="220,220,220" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
 </script
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script></body>
+<script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>
