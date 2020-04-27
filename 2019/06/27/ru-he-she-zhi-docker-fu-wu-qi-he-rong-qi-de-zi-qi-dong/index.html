@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo博客主题美化之新增看板娘, 不曾留得桃花影">
+    <meta name="keywords" content="如何设置docker服务器和容器的自启动, 不曾留得桃花影">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hexo博客主题美化之新增看板娘 | 不曾留得桃花影</title>
+    <title>如何设置docker服务器和容器的自启动 | 不曾留得桃花影</title>
     <link rel="icon" type="image/png" href="/medias/logo.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -316,12 +316,12 @@ daovoice('update');
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hexo博客主题美化之新增看板娘</h1>
+                    <h1 class="description center-align post-title">如何设置docker服务器和容器的自启动</h1>
                 </div>
             </div>
         </div>
@@ -446,12 +446,12 @@ daovoice('update');
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/live2d/">
-                                <span class="chip bg-color">live2d</span>
+                            <a href="/tags/docker/">
+                                <span class="chip bg-color">docker</span>
                             </a>
                         
-                            <a href="/tags/hexo/">
-                                <span class="chip bg-color">hexo</span>
+                            <a href="/tags/linux/">
+                                <span class="chip bg-color">linux</span>
                             </a>
                         
                     </div>
@@ -462,8 +462,12 @@ daovoice('update');
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/hexo-live2d-主题/" class="post-category">
-                                -hexo -live2d -主题
+                            <a href="/categories/linux/" class="post-category">
+                                linux
+                            </a>
+                        
+                            <a href="/categories/linux/docker/" class="post-category">
+                                docker
                             </a>
                         
                     </div>
@@ -475,7 +479,7 @@ daovoice('update');
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-06-26
+                    2019-06-27
                 </div>
                 
 
@@ -484,7 +488,7 @@ daovoice('update');
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    314
+                    252
                 </div>
                 
 
@@ -506,23 +510,16 @@ daovoice('update');
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Hexo博客主题美化之新增看板娘"><a href="#Hexo博客主题美化之新增看板娘" class="headerlink" title="Hexo博客主题美化之新增看板娘"></a>Hexo博客主题美化之新增看板娘</h1><h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p><img src="/medias/loading.gif" data-original="https://img-blog.csdnimg.cn/20190803152152975.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2NzU5MjI0,size_16,color_FFFFFF,t_70" alt="01" style="zoom: 33%;"></p>
-<h3 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h3><p>①首先检查博客主目录下面的 <code>package.json</code>里是否有<br><code>"hexo-helper-live2d": "^3.0.3",</code>依赖，有的话可以先卸载</p>
-<p><code>使用命令：npm uninstall hexo-helper-live2d</code></p>
-<p>②安装模块，如下：</p>
-<p><code>npm install --save hexo-helper-live2d</code></p>
-<p><strong>注意：</strong>命令都是在你的博客主目录执行！！！！</p>
-<p>安装完成之后在<code>package.json</code>会看到安装的model</p>
-<p><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/5841000-02a497abe20b74de.png?imageMogr2/auto-orient/strip|imageView2/2/w/607/format/webp" alt="img" style="zoom:50%;"></p>
-<p>此时再去 <code>node_moduels</code>目录下，可以看到有如下文件夹，这些都是动画主配置</p>
-<p><img src="/medias/loading.gif" data-original="https://raw.githubusercontent.com/lxwise/images/master/img/56212.jpg" alt=""></p>
-<p>③输入以下命令，下载相应的模型，将 packagename 更换成模型名称即可，<a href="http://39.99.158.50/2019/06/26/live2d-kan-ban-niang-yi-lan-tu/">更多模型选择请点击此处</a></p>
-<p><code>$ npm install packagename</code></p>
-<p><code>例如：npm install live2d-widget-model-haruto</code></p>
-<p>④打开博客根目录下的 _config.yml 文件，添加如下代码：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">live2d:</span><br><span class="line">	enable: true</span><br><span class="line">	scriptFrom: local</span><br><span class="line">	model: </span><br><span class="line">		use: live2d-widget-model-haruto #模型名称 就是你下的</span><br><span class="line">	display: </span><br><span class="line">		position: right  #模型位置</span><br><span class="line">		width: 150       #模型宽度</span><br><span class="line">		height: 300      #模型高度</span><br><span class="line">	mobile: </span><br><span class="line">		show: false      #是否在手机端显示</span><br></pre></td></tr></tbody></table></figure>
-<p>设置好过后我们就拥有了一个卡通人物</p>
-<p><img src="/medias/loading.gif" data-original="https://img-blog.csdnimg.cn/20190803152152975.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2NzU5MjI0,size_16,color_FFFFFF,t_70" alt="01"></p>
+                <p>[TOC]</p>
+<h1 id="docker设置自动启动"><a href="#docker设置自动启动" class="headerlink" title="docker设置自动启动"></a>docker设置自动启动</h1><h2 id="一、docker服务设置自动启动"><a href="#一、docker服务设置自动启动" class="headerlink" title="一、docker服务设置自动启动"></a>一、docker服务设置自动启动</h2><h3 id="查看已启动的服务"><a href="#查看已启动的服务" class="headerlink" title="查看已启动的服务"></a><strong>查看已启动的服务</strong></h3><p> systemctl list-units –type=service</p>
+<h3 id="查看是否设置开机启动"><a href="#查看是否设置开机启动" class="headerlink" title="查看是否设置开机启动"></a><strong>查看是否设置开机启动</strong></h3><p> systemctl list-unit-files | grep enable</p>
+<h3 id="设置开机启动"><a href="#设置开机启动" class="headerlink" title="设置开机启动"></a><strong>设置开机启动</strong></h3><p> systemctl enable docker.service</p>
+<h3 id="关闭开机启动"><a href="#关闭开机启动" class="headerlink" title="关闭开机启动"></a><strong>关闭开机启动</strong></h3><p> systemctl disable docker.service</p>
+<h1 id="二、docker容器设置自动启动"><a href="#二、docker容器设置自动启动" class="headerlink" title="二、docker容器设置自动启动"></a>二、docker容器设置自动启动</h1><p>启动时加</p>
+<p><code>--restart=always</code></p>
+<p> <code></code>docker run -tid –name isaler_v0.0.11 -p 8081:8080 –restart=always` </p>
+<figure class="highlight csharp"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Flag                  Description</span><br><span class="line">no             不自动重启容器. (默认<span class="keyword">value</span>)</span><br><span class="line"><span class="keyword">on</span>-failure     容器发生error而退出(容器退出状态不为<span class="number">0</span>)重启容器</span><br><span class="line">unless-stopped 在容器已经stop掉或Docker stoped/restarted的时候才重启容器</span><br><span class="line">always         在容器已经stop掉或Docker stoped/restarted的时候才重启容器</span><br></pre></td></tr></tbody></table></figure>
+<p>如果已经过运行的项目<br> 如果已经启动的项目，则使用update更新：<br> <code>docker update --restart=always isaler_v0.0.11</code></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -566,7 +563,7 @@ daovoice('update');
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://39.99.158.50/2019/06/26/hexo-bo-ke-zhu-ti-mei-hua-zhi-xin-zeng-kan-ban-niang/">http://39.99.158.50/2019/06/26/hexo-bo-ke-zhu-ti-mei-hua-zhi-xin-zeng-kan-ban-niang/</a>
+                    <a href="http://39.99.158.50/2019/06/27/ru-he-she-zhi-docker-fu-wu-qi-he-rong-qi-de-zi-qi-dong/">http://39.99.158.50/2019/06/27/ru-he-she-zhi-docker-fu-wu-qi-he-rong-qi-de-zi-qi-dong/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -604,12 +601,12 @@ daovoice('update');
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/live2d/">
-                                    <span class="chip bg-color">live2d</span>
+                                <a href="/tags/docker/">
+                                    <span class="chip bg-color">docker</span>
                                 </a>
                             
-                                <a href="/tags/hexo/">
-                                    <span class="chip bg-color">hexo</span>
+                                <a href="/tags/linux/">
+                                    <span class="chip bg-color">linux</span>
                                 </a>
                             
                         </div>
@@ -780,7 +777,7 @@ daovoice('update');
         repo: 'lxwise.github.io',
         owner: 'lxwise',
         admin: "lxwise",
-        id: '2019-06-26T21-31-55',
+        id: '2019-06-27T22-29-57',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -806,7 +803,68 @@ daovoice('update');
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2019/06/27/ru-he-she-zhi-docker-fu-wu-qi-he-rong-qi-de-zi-qi-dong/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/17.jpg" class="responsive-img" alt="如何设置docker服务器和容器的自启动">
+                        
+                        <span class="card-title">如何设置docker服务器和容器的自启动</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            [TOC]
+docker设置自动启动一、docker服务设置自动启动查看已启动的服务 systemctl list-units –type=service
+查看是否设置开机启动 systemctl list-unit-files | gre
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-06-27
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/linux/" class="post-category">
+                                    linux
+                                </a>
+                            
+                            <a href="/categories/linux/docker/" class="post-category">
+                                    docker
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/docker/">
+                        <span class="chip bg-color">docker</span>
+                    </a>
+                    
+                    <a href="/tags/linux/">
+                        <span class="chip bg-color">linux</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2019/06/27/ru-he-zai-linux-shang-zhuang-jdk1-8-bing-pei-zhi-huan-jing/">
                     <div class="card-image">
@@ -828,9 +886,9 @@ jdk版本：1.8
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-06-27
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-06-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -852,58 +910,6 @@ jdk版本：1.8
                     
                     <a href="/tags/jdk/">
                         <span class="chip bg-color">jdk</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/06/26/live2d-kan-ban-niang-yi-lan-tu/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/16.jpg" class="responsive-img" alt="live2d看板娘一览图">
-                        
-                        <span class="card-title">live2d看板娘一览图</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            live2d看板娘一览图模型下载地址：点击移步搭建教程：点击移步模型预览live2d-widget-model-chitose
-live2d-widget-model-epsilon2_1
-live2d-widget-model-gf
-li
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-06-26
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/live2d-主题/" class="post-category">
-                                    -live2d -主题
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/live2d-hexo/">
-                        <span class="chip bg-color">-live2d -hexo</span>
                     </a>
                     
                 </div>

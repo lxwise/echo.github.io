@@ -4,6 +4,62 @@
   
     
     <entry>
+      <title>如何设置docker服务器和容器的自启动</title>
+      <link href="/2019/06/27/ru-he-she-zhi-docker-fu-wu-qi-he-rong-qi-de-zi-qi-dong/"/>
+      <url>/2019/06/27/ru-he-she-zhi-docker-fu-wu-qi-he-rong-qi-de-zi-qi-dong/</url>
+      
+        <content type="html"><![CDATA[<p>[TOC]</p><h1 id="docker设置自动启动"><a href="#docker设置自动启动" class="headerlink" title="docker设置自动启动"></a>docker设置自动启动</h1><h2 id="一、docker服务设置自动启动"><a href="#一、docker服务设置自动启动" class="headerlink" title="一、docker服务设置自动启动"></a>一、docker服务设置自动启动</h2><h3 id="查看已启动的服务"><a href="#查看已启动的服务" class="headerlink" title="查看已启动的服务"></a><strong>查看已启动的服务</strong></h3><p> systemctl list-units –type=service</p><h3 id="查看是否设置开机启动"><a href="#查看是否设置开机启动" class="headerlink" title="查看是否设置开机启动"></a><strong>查看是否设置开机启动</strong></h3><p> systemctl list-unit-files | grep enable</p><h3 id="设置开机启动"><a href="#设置开机启动" class="headerlink" title="设置开机启动"></a><strong>设置开机启动</strong></h3><p> systemctl enable docker.service</p><h3 id="关闭开机启动"><a href="#关闭开机启动" class="headerlink" title="关闭开机启动"></a><strong>关闭开机启动</strong></h3><p> systemctl disable docker.service</p><h1 id="二、docker容器设置自动启动"><a href="#二、docker容器设置自动启动" class="headerlink" title="二、docker容器设置自动启动"></a>二、docker容器设置自动启动</h1><p>启动时加</p><p><code>--restart=always</code></p><p> <code></code>docker run -tid –name isaler_v0.0.11 -p 8081:8080 –restart=always` </p><figure class="highlight csharp"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Flag                  Description</span><br><span class="line">no             不自动重启容器. (默认<span class="keyword">value</span>)</span><br><span class="line"><span class="keyword">on</span>-failure     容器发生error而退出(容器退出状态不为<span class="number">0</span>)重启容器</span><br><span class="line">unless-stopped 在容器已经stop掉或Docker stoped/restarted的时候才重启容器</span><br><span class="line">always         在容器已经stop掉或Docker stoped/restarted的时候才重启容器</span><br></pre></td></tr></tbody></table></figure><p>如果已经过运行的项目<br> 如果已经启动的项目，则使用update更新：<br> <code>docker update --restart=always isaler_v0.0.11</code></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+          <category> docker </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> docker </tag>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何在linux上装jdk1.8并配置环境</title>
+      <link href="/2019/06/27/ru-he-zai-linux-shang-zhuang-jdk1-8-bing-pei-zhi-huan-jing/"/>
+      <url>/2019/06/27/ru-he-zai-linux-shang-zhuang-jdk1-8-bing-pei-zhi-huan-jing/</url>
+      
+        <content type="html"><![CDATA[<p>[TOC]</p><p>本文主要介绍的是如何是Linux环境下安装JDK的，因为Linux环境下，很多时候也离不开Java的，下面笔者就和大家一起分享如何jdk1.8的过程吧。</p><h1 id="1、安装环境"><a href="#1、安装环境" class="headerlink" title="1、安装环境"></a><strong>1、安装环境</strong></h1><p>操作系统：CentOS7 64位</p><p>jdk版本：1.8</p><p>工具：Xshell6、Xftp6</p><p>说明：Xshell6用于远程连接linux，Xftp用于上传资源到linux，两款软件是配合使用的可自行百度个人使用是免费的</p><h1 id="2、安装步骤"><a href="#2、安装步骤" class="headerlink" title="2、安装步骤"></a>2、安装步骤</h1><p>第一步：下载Linux环境下的jdk1.8安装包  <a href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html" target="_blank" rel="noopener">点击移步下载</a></p><p><img src="/medias/loading.gif" data-original="https://raw.githubusercontent.com/lxwise/images/master/img/0427212510.jpg" alt=""></p><p>第二步：把下载安装包，上传至服务器中。Xftp的使用方法就不讲了 ，自信百度</p><p><img src="/medias/loading.gif" data-original="https://raw.githubusercontent.com/lxwise/images/master/img/QQ%E6%88%AA%E5%9B%BE20200427212852.jpg" alt=""></p><p>第三步：解压安装包</p><p>将我们下载好的安装包上传至服务器，进行解压，使用Xshell远程操作</p><p><code>解压命令：tar -zxvf    [里面为你的jdk压缩包名]</code></p><p><img src="/medias/loading.gif" data-original="https://raw.githubusercontent.com/lxwise/images/master/img/QQ%E6%88%AA%E5%9B%BE20200427213243.jpg" alt=""></p><p>解压完成后，可以在当前目录下看到一个名字为jdk1.8.0_171的文件</p><p><img src="/medias/loading.gif" data-original="https://raw.githubusercontent.com/lxwise/images/master/img/asdas.jpg" alt=""></p><h1 id="3、配置环境变量"><a href="#3、配置环境变量" class="headerlink" title="3、配置环境变量"></a>3、配置环境变量</h1><p>配置环境变量的配置文件vim  /etc/profile </p><p><code>vim  /etc/profile</code> </p><p>拖到文件最后加上如下字符</p><p><code></code>JAVA_HOME=/opt/jdk1.8.0_171<code></code>PATH=/opt/jdk1.8.0_171/bin:$PATH<code>export JAVA_HOME PATH</code> </p><p><img src="/medias/loading.gif" data-original="https://raw.githubusercontent.com/lxwise/images/master/img/sadasd214929.jpg" alt=""></p><p>接着，按ESC键，然后:wq保存退出，输入reboot使服务器重启使jdk环境变量生效</p><p>查看jdk版本</p><p>输入</p><p><code>java -version或javac -version</code></p><p>出现版本号就代表安装成功了 如果没有就去看看profile里是不是配置错了</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux jdk </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> jdk </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo博客主题美化之新增看板娘</title>
       <link href="/2019/06/26/hexo-bo-ke-zhu-ti-mei-hua-zhi-xin-zeng-kan-ban-niang/"/>
       <url>/2019/06/26/hexo-bo-ke-zhu-ti-mei-hua-zhi-xin-zeng-kan-ban-niang/</url>

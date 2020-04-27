@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo博客主题美化之新增看板娘, 不曾留得桃花影">
+    <meta name="keywords" content="如何在linux上装jdk1.8并配置环境, 不曾留得桃花影">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hexo博客主题美化之新增看板娘 | 不曾留得桃花影</title>
+    <title>如何在linux上装jdk1.8并配置环境 | 不曾留得桃花影</title>
     <link rel="icon" type="image/png" href="/medias/logo.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -316,12 +316,12 @@ daovoice('update');
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hexo博客主题美化之新增看板娘</h1>
+                    <h1 class="description center-align post-title">如何在linux上装jdk1.8并配置环境</h1>
                 </div>
             </div>
         </div>
@@ -446,12 +446,12 @@ daovoice('update');
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/live2d/">
-                                <span class="chip bg-color">live2d</span>
+                            <a href="/tags/linux/">
+                                <span class="chip bg-color">linux</span>
                             </a>
                         
-                            <a href="/tags/hexo/">
-                                <span class="chip bg-color">hexo</span>
+                            <a href="/tags/jdk/">
+                                <span class="chip bg-color">jdk</span>
                             </a>
                         
                     </div>
@@ -462,8 +462,8 @@ daovoice('update');
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/hexo-live2d-主题/" class="post-category">
-                                -hexo -live2d -主题
+                            <a href="/categories/linux-jdk/" class="post-category">
+                                linux jdk
                             </a>
                         
                     </div>
@@ -475,7 +475,7 @@ daovoice('update');
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-06-26
+                    2019-06-27
                 </div>
                 
 
@@ -484,7 +484,7 @@ daovoice('update');
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    314
+                    418
                 </div>
                 
 
@@ -506,23 +506,32 @@ daovoice('update');
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Hexo博客主题美化之新增看板娘"><a href="#Hexo博客主题美化之新增看板娘" class="headerlink" title="Hexo博客主题美化之新增看板娘"></a>Hexo博客主题美化之新增看板娘</h1><h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p><img src="/medias/loading.gif" data-original="https://img-blog.csdnimg.cn/20190803152152975.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2NzU5MjI0,size_16,color_FFFFFF,t_70" alt="01" style="zoom: 33%;"></p>
-<h3 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h3><p>①首先检查博客主目录下面的 <code>package.json</code>里是否有<br><code>"hexo-helper-live2d": "^3.0.3",</code>依赖，有的话可以先卸载</p>
-<p><code>使用命令：npm uninstall hexo-helper-live2d</code></p>
-<p>②安装模块，如下：</p>
-<p><code>npm install --save hexo-helper-live2d</code></p>
-<p><strong>注意：</strong>命令都是在你的博客主目录执行！！！！</p>
-<p>安装完成之后在<code>package.json</code>会看到安装的model</p>
-<p><img src="/medias/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/5841000-02a497abe20b74de.png?imageMogr2/auto-orient/strip|imageView2/2/w/607/format/webp" alt="img" style="zoom:50%;"></p>
-<p>此时再去 <code>node_moduels</code>目录下，可以看到有如下文件夹，这些都是动画主配置</p>
-<p><img src="/medias/loading.gif" data-original="https://raw.githubusercontent.com/lxwise/images/master/img/56212.jpg" alt=""></p>
-<p>③输入以下命令，下载相应的模型，将 packagename 更换成模型名称即可，<a href="http://39.99.158.50/2019/06/26/live2d-kan-ban-niang-yi-lan-tu/">更多模型选择请点击此处</a></p>
-<p><code>$ npm install packagename</code></p>
-<p><code>例如：npm install live2d-widget-model-haruto</code></p>
-<p>④打开博客根目录下的 _config.yml 文件，添加如下代码：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">live2d:</span><br><span class="line">	enable: true</span><br><span class="line">	scriptFrom: local</span><br><span class="line">	model: </span><br><span class="line">		use: live2d-widget-model-haruto #模型名称 就是你下的</span><br><span class="line">	display: </span><br><span class="line">		position: right  #模型位置</span><br><span class="line">		width: 150       #模型宽度</span><br><span class="line">		height: 300      #模型高度</span><br><span class="line">	mobile: </span><br><span class="line">		show: false      #是否在手机端显示</span><br></pre></td></tr></tbody></table></figure>
-<p>设置好过后我们就拥有了一个卡通人物</p>
-<p><img src="/medias/loading.gif" data-original="https://img-blog.csdnimg.cn/20190803152152975.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2NzU5MjI0,size_16,color_FFFFFF,t_70" alt="01"></p>
+                <p>[TOC]</p>
+<p>本文主要介绍的是如何是Linux环境下安装JDK的，因为Linux环境下，很多时候也离不开Java的，下面笔者就和大家一起分享如何jdk1.8的过程吧。</p>
+<h1 id="1、安装环境"><a href="#1、安装环境" class="headerlink" title="1、安装环境"></a><strong>1、安装环境</strong></h1><p>操作系统：CentOS7 64位</p>
+<p>jdk版本：1.8</p>
+<p>工具：Xshell6、Xftp6</p>
+<p>说明：Xshell6用于远程连接linux，Xftp用于上传资源到linux，两款软件是配合使用的可自行百度个人使用是免费的</p>
+<h1 id="2、安装步骤"><a href="#2、安装步骤" class="headerlink" title="2、安装步骤"></a>2、安装步骤</h1><p>第一步：下载Linux环境下的jdk1.8安装包  <a href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html" target="_blank" rel="noopener">点击移步下载</a></p>
+<p><img src="/medias/loading.gif" data-original="https://raw.githubusercontent.com/lxwise/images/master/img/0427212510.jpg" alt=""></p>
+<p>第二步：把下载安装包，上传至服务器中。Xftp的使用方法就不讲了 ，自信百度</p>
+<p><img src="/medias/loading.gif" data-original="https://raw.githubusercontent.com/lxwise/images/master/img/QQ%E6%88%AA%E5%9B%BE20200427212852.jpg" alt=""></p>
+<p>第三步：解压安装包</p>
+<p>将我们下载好的安装包上传至服务器，进行解压，使用Xshell远程操作</p>
+<p><code>解压命令：tar -zxvf    [里面为你的jdk压缩包名]</code></p>
+<p><img src="/medias/loading.gif" data-original="https://raw.githubusercontent.com/lxwise/images/master/img/QQ%E6%88%AA%E5%9B%BE20200427213243.jpg" alt=""></p>
+<p>解压完成后，可以在当前目录下看到一个名字为jdk1.8.0_171的文件</p>
+<p><img src="/medias/loading.gif" data-original="https://raw.githubusercontent.com/lxwise/images/master/img/asdas.jpg" alt=""></p>
+<h1 id="3、配置环境变量"><a href="#3、配置环境变量" class="headerlink" title="3、配置环境变量"></a>3、配置环境变量</h1><p>配置环境变量的配置文件vim  /etc/profile </p>
+<p><code>vim  /etc/profile</code> </p>
+<p>拖到文件最后加上如下字符</p>
+<p><code></code>JAVA_HOME=/opt/jdk1.8.0_171<code></code>PATH=/opt/jdk1.8.0_171/bin:$PATH<code>export JAVA_HOME PATH</code> </p>
+<p><img src="/medias/loading.gif" data-original="https://raw.githubusercontent.com/lxwise/images/master/img/sadasd214929.jpg" alt=""></p>
+<p>接着，按ESC键，然后:wq保存退出，输入reboot使服务器重启使jdk环境变量生效</p>
+<p>查看jdk版本</p>
+<p>输入</p>
+<p><code>java -version或javac -version</code></p>
+<p>出现版本号就代表安装成功了 如果没有就去看看profile里是不是配置错了</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -566,7 +575,7 @@ daovoice('update');
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://39.99.158.50/2019/06/26/hexo-bo-ke-zhu-ti-mei-hua-zhi-xin-zeng-kan-ban-niang/">http://39.99.158.50/2019/06/26/hexo-bo-ke-zhu-ti-mei-hua-zhi-xin-zeng-kan-ban-niang/</a>
+                    <a href="http://39.99.158.50/2019/06/27/ru-he-zai-linux-shang-zhuang-jdk1-8-bing-pei-zhi-huan-jing/">http://39.99.158.50/2019/06/27/ru-he-zai-linux-shang-zhuang-jdk1-8-bing-pei-zhi-huan-jing/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -604,12 +613,12 @@ daovoice('update');
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/live2d/">
-                                    <span class="chip bg-color">live2d</span>
+                                <a href="/tags/linux/">
+                                    <span class="chip bg-color">linux</span>
                                 </a>
                             
-                                <a href="/tags/hexo/">
-                                    <span class="chip bg-color">hexo</span>
+                                <a href="/tags/jdk/">
+                                    <span class="chip bg-color">jdk</span>
                                 </a>
                             
                         </div>
@@ -780,7 +789,7 @@ daovoice('update');
         repo: 'lxwise.github.io',
         owner: 'lxwise',
         admin: "lxwise",
-        id: '2019-06-26T21-31-55',
+        id: '2019-06-27T21-13-17',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -808,23 +817,21 @@ daovoice('update');
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/06/27/ru-he-zai-linux-shang-zhuang-jdk1-8-bing-pei-zhi-huan-jing/">
+                <a href="/2019/06/27/ru-he-she-zhi-docker-fu-wu-qi-he-rong-qi-de-zi-qi-dong/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/23.jpg" class="responsive-img" alt="如何在linux上装jdk1.8并配置环境">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/17.jpg" class="responsive-img" alt="如何设置docker服务器和容器的自启动">
                         
-                        <span class="card-title">如何在linux上装jdk1.8并配置环境</span>
+                        <span class="card-title">如何设置docker服务器和容器的自启动</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             [TOC]
-本文主要介绍的是如何是Linux环境下安装JDK的，因为Linux环境下，很多时候也离不开Java的，下面笔者就和大家一起分享如何jdk1.8的过程吧。
-1、安装环境操作系统：CentOS7 64位
-jdk版本：1.8
-工具：X
+docker设置自动启动一、docker服务设置自动启动查看已启动的服务 systemctl list-units –type=service
+查看是否设置开机启动 systemctl list-unit-files | gre
                         
                     </div>
                     <div class="publish-info">
@@ -835,8 +842,12 @@ jdk版本：1.8
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/linux-jdk/" class="post-category">
-                                    linux jdk
+                            <a href="/categories/linux/" class="post-category">
+                                    linux
+                                </a>
+                            
+                            <a href="/categories/linux/docker/" class="post-category">
+                                    docker
                                 </a>
                             
                             
@@ -846,12 +857,12 @@ jdk版本：1.8
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/linux/">
-                        <span class="chip bg-color">linux</span>
+                    <a href="/tags/docker/">
+                        <span class="chip bg-color">docker</span>
                     </a>
                     
-                    <a href="/tags/jdk/">
-                        <span class="chip bg-color">jdk</span>
+                    <a href="/tags/linux/">
+                        <span class="chip bg-color">linux</span>
                     </a>
                     
                 </div>
@@ -865,22 +876,21 @@ jdk版本：1.8
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/06/26/live2d-kan-ban-niang-yi-lan-tu/">
+                <a href="/2019/06/26/hexo-bo-ke-zhu-ti-mei-hua-zhi-xin-zeng-kan-ban-niang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/16.jpg" class="responsive-img" alt="live2d看板娘一览图">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/20.jpg" class="responsive-img" alt="Hexo博客主题美化之新增看板娘">
                         
-                        <span class="card-title">live2d看板娘一览图</span>
+                        <span class="card-title">Hexo博客主题美化之新增看板娘</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            live2d看板娘一览图模型下载地址：点击移步搭建教程：点击移步模型预览live2d-widget-model-chitose
-live2d-widget-model-epsilon2_1
-live2d-widget-model-gf
-li
+                            Hexo博客主题美化之新增看板娘效果
+教程①首先检查博客主目录下面的 package.json里是否有"hexo-helper-live2d": "^3.0.3",依赖，有的话可以先卸载
+使用命令：npm uninstall hexo-he
                         
                     </div>
                     <div class="publish-info">
@@ -891,8 +901,8 @@ li
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/live2d-主题/" class="post-category">
-                                    -live2d -主题
+                            <a href="/categories/hexo-live2d-主题/" class="post-category">
+                                    -hexo -live2d -主题
                                 </a>
                             
                             
@@ -902,8 +912,12 @@ li
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/live2d-hexo/">
-                        <span class="chip bg-color">-live2d -hexo</span>
+                    <a href="/tags/live2d/">
+                        <span class="chip bg-color">live2d</span>
+                    </a>
+                    
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                 </div>
