@@ -166,6 +166,201 @@
     
     
     <entry>
+      <title>Eclipse怎么设置类头信息的方法</title>
+      <link href="/2019/05/05/eclipse-zen-me-she-zhi-lei-tou-xin-xi-de-fang-fa/"/>
+      <url>/2019/05/05/eclipse-zen-me-she-zhi-lei-tou-xin-xi-de-fang-fa/</url>
+      
+        <content type="html"><![CDATA[<p><strong>首先打开Eclipse配置选项：Window-&gt;Preference-&gt;Java-&gt;Code Style-&gt;Code Template</strong></p><p><img src="/medias/loading.gif" data-original="https://raw.githubusercontent.com/lxwise/images/master/img/dasdasds15454.png" alt=""></p><p>下面是我列举的几个常用的模板<br>1、Files</p><p>/**</p><p>@Title: ${file_name}<br>@Package ${package_name}<br>@Description: ${todo}(用一句话描述该文件做什么)<br>@author （这里是作者，不写默认是你电脑的用户名，可以自定义）<br>@date ${date}<br>*/</p><p>2、Types</p><p>/**</p><p>@Description: ${todo}(这里用一句话描述这个类的作用)<br>@CopyRightInformation : XXX(公司名称)<br>@ApplicationName: ${project_name}<br>@Title: ${file_name}<br>@author （这里是作者，不写默认是你电脑的用户名，可以自定义）<br>@date: ${date} ${time}<br>${tags}<br>*/<br>3、Constructors</p><p>/**</p><p>${tags}<br>*/<br>4、Methods</p><p>/**</p><p>@Title: ${enclosing_method}<br>@Description: ${todo}(这里用一句话描述这个方法的作用)<br>@author: （这里是作者，不写默认是你电脑的用户名，可以自定义）<br>@date: ${date} ${time}<br>@param ${tags} 参数<br>@return ${return_type} 返回类型<br>@throws<br>*/<br>5、Overriding methods</p><p>/**</p><p>Title: ${enclosing_method}</p><p>Description:</p><p>${tags}<br>${see_to_overridden}<br>*/</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> eclipse </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> eclipse </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>水仙花束</title>
+      <link href="/2018/11/10/shui-xian-hua-shu/"/>
+      <url>/2018/11/10/shui-xian-hua-shu/</url>
+      
+        <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>水仙花数是指一个 3 位数，它的每个位上的数字的 3次幂之和等于它本身（例如：1^3 + 5^3+ 3^3 = 153）。</p><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">public class waterFlowerNum {</span><br><span class="line"></span><br><span class="line">public static void waterFlower() {</span><br><span class="line">//求出个、十、百的数字</span><br><span class="line">for(int i=100;i&lt;1000;i++) {</span><br><span class="line">int g = i/1%10;</span><br><span class="line">int s = i/10%10;</span><br><span class="line">int b = i/100;</span><br><span class="line">if(g*g*g + s*s*s + b*b*b==i) {</span><br><span class="line">System.out.print(i + " ");</span><br><span class="line">}</span><br><span class="line">}</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">public static void main(String[] args) {</span><br><span class="line"></span><br><span class="line">waterFlower();</span><br><span class="line"></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>快速排序</title>
+      <link href="/2018/11/10/kuai-su-pai-xu/"/>
+      <url>/2018/11/10/kuai-su-pai-xu/</url>
+      
+        <content type="html"><![CDATA[<p>[TOC]</p><h1 id="快速排序-分区交换排序"><a href="#快速排序-分区交换排序" class="headerlink" title="快速排序( ( ( ( 分区交换排序) ) ) )"></a>快速排序( ( ( ( 分区交换排序) ) ) )</h1><p>快速排序（Quick Sorting）是迄今为止所有内排序算法中速度最快的一种<br>。它的 基本思想是：任取待排序序列中的某个元素作为标准（ 也称为支点、界点<br>， 一般取第一个元素），通过一次划分，将待排元素分为左右两个子序列，左子<br>序列元素的排序码均小于基准元素的排序码，右子序列的排序码则大于或等于基<br>准元素的排序码，然后分别对两个子序列继续进行划分，直至每一个序列只有一<br>个元素为止。最后得到的序列便是有序序列。</p><p><img src="/medias/loading.gif" data-original="https://raw.githubusercontent.com/lxwise/images/master/img/qqwe3137.jpg" alt=""></p><h2 id="一次划分的具体过程"><a href="#一次划分的具体过程" class="headerlink" title="一次划分的具体过程"></a>一次划分的具体过程</h2><p>​    1．low指向待划分区域首元素，high指向待划分区域尾元素;<br>​    2．R[0]=R[low] (为了减少数据的移动,将作为标准的元素暂存<br>到R[0]中，最后再放入最终位置) ;</p><ol start="3"><li>high从后往前移动直到R[high].key&lt;R[0].key;</li><li>R[low]=R[high], low++;</li><li>low从前往后移动直到R[low].key&gt;=R[0].key;</li><li>R[high]=R[low], high–;</li><li>goto 3;</li><li>直到low==high时，R[low]=R[0] (即将作为标准的元素放到<br>其最终位置) 。<br>概括地说, 一次划分就是从表的两端交替地向中间进行扫描,<br>将小的放到左边, 大的放到右边, 作为标准的元素放到中间。</li></ol><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line">package test;</span><br><span class="line"></span><br><span class="line">public class QuickSort {</span><br><span class="line"></span><br><span class="line">public static void main(String[] args) {</span><br><span class="line">    int[] a = {12,20,5,16,15,1,30,45,23,9,4,4};</span><br><span class="line">        int min = 0;</span><br><span class="line">        int max = a.length-1;</span><br><span class="line">        sort(a, min, max);</span><br><span class="line">        for (int i : a) {</span><br><span class="line">System.out.println(i);</span><br><span class="line">}</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">/*</span><br><span class="line"> * 首先需要一个数组存放所有的数据</span><br><span class="line"> * 定一个开始位置和一个结束为止</span><br><span class="line"> * 选择一个数作为准基数</span><br><span class="line"> */</span><br><span class="line">public static void sort(int a[],int min,int max) {</span><br><span class="line">int key=a[min];//准基数</span><br><span class="line">        int start=min; //开始位置</span><br><span class="line">        int end =max;//结束位置</span><br><span class="line">        </span><br><span class="line">        while(end&gt;start) {  //循环条件是否数值交叉</span><br><span class="line">        //从后开始往前查找</span><br><span class="line">        while(end&gt;start&amp;&amp;a[end]&gt;=key) {</span><br><span class="line">        //如果找到的值大于基数值，那么继续往下找，end--</span><br><span class="line">        end--;</span><br><span class="line">        }</span><br><span class="line">        //如果找到的值小于基数值，那么进行值交换</span><br><span class="line">        if(a[end]&lt;key) {</span><br><span class="line">        int i=a[end];</span><br><span class="line">        a[end]=a[start];</span><br><span class="line">        a[start]=i;</span><br><span class="line">        </span><br><span class="line">        }</span><br><span class="line">        </span><br><span class="line">        //从前往后找</span><br><span class="line">        while(end&gt;start&amp;&amp;a[start]&lt;=key) {</span><br><span class="line">        //如果找到的值小于基数值，那么继续往下找，start++</span><br><span class="line">        start++;</span><br><span class="line">        }</span><br><span class="line">        //如果找到的值大于基数值，那么进行值交换</span><br><span class="line">        if(a[start]&gt;key) {</span><br><span class="line">        int i=a[start];</span><br><span class="line">        a[start]=a[end];</span><br><span class="line">        a[end]=i;</span><br><span class="line">        </span><br><span class="line">        }</span><br><span class="line">        }</span><br><span class="line"></span><br><span class="line">        </span><br><span class="line">      //这部分的数据都是小于准基数，通过递归在进行一趟快排</span><br><span class="line">        if(start&gt;min) {</span><br><span class="line">         sort(a, min, start-1);  //开始位置为第一位，结束位置为关键索引-1</span><br><span class="line">        }</span><br><span class="line">        </span><br><span class="line">        if(end&lt;max) {</span><br><span class="line">         sort(a, end+1, max);  //开始位置为关键索引+1，结束位置最后一位</span><br><span class="line">        }</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> java基础 </category>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>简单的冒泡排序</title>
+      <link href="/2018/11/10/jian-dan-de-mou-pao-pai-xu/"/>
+      <url>/2018/11/10/jian-dan-de-mou-pao-pai-xu/</url>
+      
+        <content type="html"><![CDATA[<p>[TOC]</p><h1 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h1><h2 id="介绍："><a href="#介绍：" class="headerlink" title="介绍："></a>介绍：</h2><p>冒泡排序的原理非常简单，它重复地走访过要排序的数列，一次比较两个元<br>素，如果他们的顺序错误就把他们交换过来。</p><h2 id="排序思想："><a href="#排序思想：" class="headerlink" title="排序思想："></a>排序思想：</h2><p>比较相邻的元素。如果第一个比第二个大（升序），就交换他们两个。<br>对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。这步<br>做完后，最后的元素会是最大的数。<br>针对所有的元素重复以上的步骤，除了最后一个。<br>持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要<br>比较为止。<br>快速 排序</p><h2 id="介绍：-1"><a href="#介绍：-1" class="headerlink" title="介绍："></a>介绍：</h2><p>快速排序通常明显比同为O(nlogn)的其他算法更快，因此常被采用，而且快<br>排采用了分治法的思想，所以在很多笔试面试中能经常看到快排的影子。可<br>见掌握快排的重要性。<br>快速排序（Quick Sort）由图灵奖获得者Tony Hoare发明，被列为20世纪十<br>大算法之一，是迄今为止所有内排序算法中速度最快的一种。冒泡排序的升<br>级版，交换排序的一种。快速排序的时间复杂度为O(nlog(n))。</p><h2 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h2><p><img src="/medias/loading.gif" data-original="https://raw.githubusercontent.com/lxwise/images/master/img/4522356.jpg" style="zoom: 67%;"></p><p><img src="/medias/loading.gif" data-original="https://raw.githubusercontent.com/lxwise/images/master/img/4446asd9.jpg" style="zoom:67%;"></p><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">public class BubbleSortTest {</span><br><span class="line"></span><br><span class="line">public static void main(String[] args) {</span><br><span class="line">int[] arr = new int[]{43,42,56,75,64,58,97,86};</span><br><span class="line"></span><br><span class="line">//冒泡排序 第一大轮</span><br><span class="line">//八个元素比七轮 所以 arr.length - 1</span><br><span class="line">for (int i = 0; i &lt; arr.length - 1; i++) {</span><br><span class="line">// 当 i=1时第二大轮  arr.length - 1 还要少一个</span><br><span class="line">for (int j = 0; j &lt; arr.length - 1 - i; j++) {</span><br><span class="line">//当前一个比后一个数大时交换</span><br><span class="line">if (arr[j] &gt; arr[j + 1 ]) {</span><br><span class="line">int temp = arr[j];</span><br><span class="line">arr[j] = arr[j + 1];</span><br><span class="line">arr[j + 1] = temp;</span><br><span class="line">}</span><br><span class="line">}</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//遍历</span><br><span class="line"></span><br><span class="line">for (int i = 0; i &lt; arr.length; i++) {</span><br><span class="line">System.out.print(arr[i] + "\t ");</span><br><span class="line">}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> java基础 </category>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>java中数组的复制、反转、查找操作(线性查找、二分法查找)</title>
+      <link href="/2018/11/10/java-zhong-shu-zu-de-fu-zhi-fan-zhuan-cha-zhao-cao-zuo-xian-xing-cha-zhao-er-fen-fa-cha-zhao/"/>
+      <url>/2018/11/10/java-zhong-shu-zu-de-fu-zhi-fan-zhuan-cha-zhao-cao-zuo-xian-xing-cha-zhao-er-fen-fa-cha-zhao/</url>
+      
+        <content type="html"><![CDATA[<p>[TOC]</p><h2 id="二分法查找的原理："><a href="#二分法查找的原理：" class="headerlink" title="二分法查找的原理："></a>二分法查找的原理：</h2><p><img src="/medias/loading.gif" data-original="https://raw.githubusercontent.com/lxwise/images/master/img/213a47.png" style="zoom:67%;"></p><h2 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h2><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) {</span><br><span class="line">String[] arr = new String[] {“GG”,“MM”,“JJ”,“DD”,“BB”,“AA”};</span><br><span class="line"></span><br><span class="line">//数组的复制(区别于数组的赋值：arr1 = arr)</span><br><span class="line">String[] arr1 = new String[arr.length];</span><br><span class="line">for (int i = 0; i &lt; arr1.length; i++) {</span><br><span class="line">arr1[i] = arr[i];</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">//数组的反转</span><br><span class="line"></span><br><span class="line">for (int i = 0,j = arr.length -1;i &lt; j; i++,j--) {</span><br><span class="line"> </span><br><span class="line">String temp = arr[i];</span><br><span class="line">arr[i] = arr[j];</span><br><span class="line">arr[j] = temp;</span><br><span class="line">}</span><br><span class="line">//遍历</span><br><span class="line">for (int i = 0; i &lt; arr1.length; i++) {</span><br><span class="line">System.out.print(arr[i] + "\t");</span><br><span class="line">}</span><br><span class="line">System.out.println();</span><br><span class="line"></span><br><span class="line">//数组的查找 （二分法查找）</span><br><span class="line">//前提 ：数组必须是有序的</span><br><span class="line">int[] arr2 = new int[] {-90,-78,-77,0,123,345,657,875,899,990,999};</span><br><span class="line"></span><br><span class="line">int dest = 345;</span><br><span class="line">int head = 0;//初始首索引值</span><br><span class="line">int end = arr2.length -1;//初始的末索引</span><br><span class="line"></span><br><span class="line">boolean isFlag = true;</span><br><span class="line">while(head &lt;= end) {</span><br><span class="line">int mid = (head + end) / 2; //得到索引的中间值</span><br><span class="line"></span><br><span class="line">if (dest == arr2[mid]) {</span><br><span class="line">System.out.println("找到了指定的元素，位置为："+mid);</span><br><span class="line">isFlag = false;</span><br><span class="line">break;</span><br><span class="line">}else if (arr2[mid] &gt; dest) {</span><br><span class="line">end = mid -1;</span><br><span class="line">}else {//arr2{mid} &lt;dest</span><br><span class="line">head = mid + 1;</span><br><span class="line"> }</span><br><span class="line">}</span><br><span class="line">if (isFlag) {</span><br><span class="line">System.out.println("很遗憾没有找到啦！");</span><br><span class="line">}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> java基础 </category>
+          
+          <category> 数组 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+            <tag> 数组 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>java实现杨辉三角</title>
+      <link href="/2018/11/10/java-shi-xian-yang-hui-san-jiao/"/>
+      <url>/2018/11/10/java-shi-xian-yang-hui-san-jiao/</url>
+      
+        <content type="html"><![CDATA[<p>使用二维数组打印一个 10 行杨辉三角。*<br>    <strong><strong>【提示】</strong></strong></p><pre><code>1. 第一行有 1 个元素, 第 n 行有 n 个元素2. 每一行的第一个元素和最后一个元素都是 13. 从第三行开始, 对于非第一个元素和最后一个元素的元素。即：yanghui[i][j] = yanghui[i-1][j-1] + yanghui[i-1][j];</code></pre><p>效果图：</p><p><img src="/medias/loading.gif" data-original="https://raw.githubusercontent.com/lxwise/images/master/img/4545.png" alt=""></p><p>代码：</p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">public class YangHui {`</span><br><span class="line"></span><br><span class="line">`public static void main(String[] args) {`</span><br><span class="line">``</span><br><span class="line"></span><br><span class="line">//1.声明并初始化二维数组</span><br><span class="line">int[][] yanghui = new int[10][];</span><br><span class="line"></span><br><span class="line">//2.给数组的元素赋值</span><br><span class="line">for (int i = 0; i &lt; yanghui.length; i++) {</span><br><span class="line">yanghui[i] = new int[i+1];//第一行有1个元素 第二行有2个元素</span><br><span class="line"></span><br><span class="line">//2.1给首末元素赋值</span><br><span class="line">yanghui[i][0] = yanghui[i][i] = 1;</span><br><span class="line"></span><br><span class="line">//2.2给每行的非首末元素赋值</span><br><span class="line">for (int j = 1; j &lt; yanghui[i].length - 1; j++) {</span><br><span class="line">yanghui[i][j] = yanghui[i-1][j-1] + yanghui[i-1][j];</span><br><span class="line">}</span><br><span class="line">}</span><br><span class="line">//3.遍历二维数组</span><br><span class="line"></span><br><span class="line">for (int i = 0; i &lt; yanghui.length; i++) {</span><br><span class="line">for (int j = 0; j &lt; yanghui[i].length; j++) {</span><br><span class="line"></span><br><span class="line">System.out.print(yanghui[i][j] + " ");</span><br><span class="line">}</span><br><span class="line">System.out.println();</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">`}`</span><br></pre></td></tr></tbody></table></figure><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> java基础 </category>
+          
+          <category> 二维数组 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+            <tag> 二维数组 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>java中this关键字和super关键字的使用</title>
+      <link href="/2018/11/09/java-zhong-this-guan-jian-zi-he-super-guan-jian-zi-de-shi-yong/"/>
+      <url>/2018/11/09/java-zhong-this-guan-jian-zi-he-super-guan-jian-zi-de-shi-yong/</url>
+      
+        <content type="html"><![CDATA[<p>[TOC]</p><h1 id="java中this关键字和super关键字的使用"><a href="#java中this关键字和super关键字的使用" class="headerlink" title="java中this关键字和super关键字的使用"></a>java中this关键字和super关键字的使用</h1><h2 id="This关键字"><a href="#This关键字" class="headerlink" title="This关键字"></a>This关键字</h2><h3 id="1-this可以用来修饰：属性，方法，构造器。"><a href="#1-this可以用来修饰：属性，方法，构造器。" class="headerlink" title="1.this可以用来修饰：属性，方法，构造器。"></a>1.this可以用来修饰：属性，方法，构造器。</h3><h3 id="2-this修饰属性和方法："><a href="#2-this修饰属性和方法：" class="headerlink" title="2.this修饰属性和方法："></a>2.this修饰属性和方法：</h3><p>this理解为当前对象或当前正在创建的对象</p><p>2.1在类的方法中，我们使用“this.属性”,”this.方法”的方式，调用当前对象属性或方法。<br>但是一般选择省略 “this.”，特殊情况下，当属性和形参同名时，必须使用“this.变量”的<br>方式表明此变量是属性，而非形参。<br>2.2在类的构造器中，我们使用“this.属性”,”this.方法”的方式，调用当前正在创建的对象属性或方法。<br>但是一般选择省略 “this.”，特殊情况下，当构造器的属性和形参同名时，必须使用“this.变量”的方式表明此变量是属性，而非形参。</p><h3 id="3-this调用构造器"><a href="#3-this调用构造器" class="headerlink" title="3.this调用构造器"></a>3.this调用构造器</h3><p>①我们在类的构造器中，可以显式的使用“this（形参列表）”方式，调用本类中指定的其他构造器。<br>②构造器不能通过“this（形参列表）”方式调用自己。<br>③如果一个类中有n个构造器，则最多有n-1构造器使用了“this（形参列表）”<br>④规定：“this（形参列表）”必须声明在当前构造器的首行<br>⑤构造器内部，最多只能声明一个“this（形参列表）”，用来调用其他构造器。</p><h2 id="super关键字的使用"><a href="#super关键字的使用" class="headerlink" title="super关键字的使用"></a>super关键字的使用</h2><h4 id="1-super理解为：父类的"><a href="#1-super理解为：父类的" class="headerlink" title="1.super理解为：父类的"></a>1.super理解为：父类的</h4><h4 id="2-super可以用来调用：属性，方法，构造器"><a href="#2-super可以用来调用：属性，方法，构造器" class="headerlink" title="2.super可以用来调用：属性，方法，构造器"></a>2.super可以用来调用：属性，方法，构造器</h4><h4 id="3-super的使用"><a href="#3-super的使用" class="headerlink" title="3.super的使用"></a>3.super的使用</h4><p>3.1我们可以在子类的方法或构造器中。通过“super.属性”或“super.方法”的方式，<br>式调用父类中声明的属性或方法。但是，通常情况下，我们习惯省略“super.”<br>3.2特殊情况：当子类和父类定义了同名属性时，我们要想在子类中调用父类中声明的属性，<br>则必须显式的使用“super.属性”的方法，表明调用的是父类声明的属性。 3.3特殊情况：当子类重新了父类中的方法以后，我们想在子类中调用父类的被重写的方法，则必须显式的使用“super.属性”的方法，表明调用的是父类声明的方法</p><h4 id="4-super调用构造器"><a href="#4-super调用构造器" class="headerlink" title="4.super调用构造器"></a>4.super调用构造器</h4><p>4.1我们可以在子类构造器中显式使用“super（形参列表）”的方式，调用父类中声明的指定的构造器<br>4.2“super（形参列表）”的使用，必须声明在子类构造器的首行<br>4.3我们在类构造器中，针对于“this.(形参列表)”或“super.形参列表”，只能二选一，不能同时出现<br>4.4在构造器首行，没有显式的声明“this.(形参列表)”或“super.形参列表”则默认调用的是父类中的构造器（super）、<br>4.5在类的多个构造器中，至少有一个类的构造器使用了“super.形参列表”，调用父类中的构造器</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> java基础 </category>
+          
+          <category> 面向对象 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java基础 </tag>
+            
+            <tag> 面向对象 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>方法的重载和重写</title>
       <link href="/2018/11/09/fang-fa-de-chong-zai-overload-he-chong-xie-override-overwrite/"/>
       <url>/2018/11/09/fang-fa-de-chong-zai-overload-he-chong-xie-override-overwrite/</url>
@@ -183,6 +378,35 @@
         <tags>
             
             <tag> -java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>成员变量与局部变量的区别</title>
+      <link href="/2018/11/08/cheng-yuan-bian-liang-yu-ju-bu-bian-liang-de-qu-bie/"/>
+      <url>/2018/11/08/cheng-yuan-bian-liang-yu-ju-bu-bian-liang-de-qu-bie/</url>
+      
+        <content type="html"><![CDATA[<p>[TOC]</p><h1 id="属性（成员变量）-VS-局部变量"><a href="#属性（成员变量）-VS-局部变量" class="headerlink" title="属性（成员变量） VS 局部变量"></a>属性（成员变量） VS 局部变量</h1><h2 id="1、相同点"><a href="#1、相同点" class="headerlink" title="1、相同点:"></a>1、相同点:</h2><ul><li>1.1定义变量的格式：数据类型 变量名 = 变量值</li><li>1.2先声明，后使用</li><li>1.3变量都有其对应的作用域</li></ul><h2 id="2、不同点"><a href="#2、不同点" class="headerlink" title="2、不同点:"></a>2、不同点:</h2><ul><li><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"> 2.1在类中声明的位置不同</span><br><span class="line">属性直接定义在类的一对{}内</span><br><span class="line">局部变量：声明在方法内，方法形参，代码块内，构造形参，构造器内的变量</span><br><span class="line">2.2 默认初始化值的情况;</span><br><span class="line">  </span><br><span class="line">属性;类的属性，根据其类型都有默认初始化值。</span><br><span class="line">  </span><br><span class="line">整型（byte，short，int， long）： 0</span><br><span class="line">浮点型（float，double）0.0</span><br><span class="line">字符型（char）0或者（\u0000）</span><br><span class="line">  </span><br><span class="line">布尔型（boolean）：false</span><br><span class="line">  </span><br><span class="line">引用数据类型（类，数组，接口）：null</span><br><span class="line">  </span><br><span class="line">局部变量没有初始化值。调用局部变量之前，一定要显示赋值 形参调用时，赋值就行</span><br><span class="line">  </span><br><span class="line">2.3在内存的加载位置</span><br><span class="line">  </span><br><span class="line">属性;加载到堆空间中（非static）</span><br><span class="line">  </span><br><span class="line">局部变量：加载到栈空间中</span><br></pre></td></tr></tbody></table></figure></li></ul><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre><code>public static void main(String[] args) {User u1 = new User();System.out.println(u1.name);//nullSystem.out.println(u1.age);//0System.out.println(u1.isMale);//false}</code></pre><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class User{</span><br><span class="line">/属性(或成员变量)</span><br><span class="line">String name;</span><br><span class="line">int age;</span><br><span class="line">boolean isMale;</span><br><span class="line"></span><br><span class="line">public void talk(String language) {//language:形参，也是局部变量</span><br><span class="line">System.out.println("我们使用的是"+language+"进行交流");</span><br><span class="line"></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">public void eat() {</span><br><span class="line">String food = "烙饼";//局部变量</span><br><span class="line">System.out.println("北方人喜欢吃"+food);</span><br><span class="line">}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> java基础 </category>
+          
+          <category> 面向对象 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java基础 </tag>
+            
+            <tag> 面向对象 </tag>
             
         </tags>
       
