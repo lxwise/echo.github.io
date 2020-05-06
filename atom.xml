@@ -42,9 +42,9 @@
       <category term="docker" scheme="http://39.99.158.50/categories/linux/docker/"/>
     
     
-      <category term="linux" scheme="http://39.99.158.50/tags/linux/"/>
-    
       <category term="docker" scheme="http://39.99.158.50/tags/docker/"/>
+    
+      <category term="linux" scheme="http://39.99.158.50/tags/linux/"/>
     
   </entry>
   
