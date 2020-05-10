@@ -3,11 +3,11 @@
   <title>不曾留得桃花影</title>
   
   
-  <link href="/;/echo.github.io/atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
-  <link href="http://39.99.158.50/;https://lxwise.github.io/"/>
+  <link href="http://39.99.158.50/"/>
   <updated>2020-05-10T06:40:15.942Z</updated>
-  <id>http://39.99.158.50/;https://lxwise.github.io/</id>
+  <id>http://39.99.158.50/</id>
   
   <author>
     <name>echo</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>redis复习（十五）</title>
-    <link href="http://39.99.158.50/;https://lxwise.github.io/2020/05/10/15redis-bi-ji/"/>
-    <id>http://39.99.158.50/;https://lxwise.github.io/2020/05/10/15redis-bi-ji/</id>
+    <link href="http://39.99.158.50/2020/05/10/15redis-bi-ji/"/>
+    <id>http://39.99.158.50/2020/05/10/15redis-bi-ji/</id>
     <published>2020-05-10T08:23:07.000Z</published>
     <updated>2020-05-10T06:40:15.942Z</updated>
     
@@ -40,21 +40,21 @@
     </summary>
     
     
-      <category term="redis" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/redis/"/>
+      <category term="redis" scheme="http://39.99.158.50/categories/redis/"/>
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/redis/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/categories/redis/%E5%A4%8D%E4%B9%A0/"/>
     
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/tags/%E5%A4%8D%E4%B9%A0/"/>
     
-      <category term="redis" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/redis/"/>
+      <category term="redis" scheme="http://39.99.158.50/tags/redis/"/>
     
   </entry>
   
   <entry>
     <title>AJAX&amp;&amp;JSON复习（十四）</title>
-    <link href="http://39.99.158.50/;https://lxwise.github.io/2020/05/10/14ajax-json-bi-ji/"/>
-    <id>http://39.99.158.50/;https://lxwise.github.io/2020/05/10/14ajax-json-bi-ji/</id>
+    <link href="http://39.99.158.50/2020/05/10/14ajax-json-bi-ji/"/>
+    <id>http://39.99.158.50/2020/05/10/14ajax-json-bi-ji/</id>
     <published>2020-05-10T08:13:07.000Z</published>
     <updated>2020-05-10T06:40:15.945Z</updated>
     
@@ -74,25 +74,25 @@
     </summary>
     
     
-      <category term="AJAX" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/AJAX/"/>
+      <category term="AJAX" scheme="http://39.99.158.50/categories/AJAX/"/>
     
-      <category term="JSON" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/AJAX/JSON/"/>
+      <category term="JSON" scheme="http://39.99.158.50/categories/AJAX/JSON/"/>
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/AJAX/JSON/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/categories/AJAX/JSON/%E5%A4%8D%E4%B9%A0/"/>
     
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/tags/%E5%A4%8D%E4%B9%A0/"/>
     
-      <category term="AJAX" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/AJAX/"/>
+      <category term="AJAX" scheme="http://39.99.158.50/tags/AJAX/"/>
     
-      <category term="JSON" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/JSON/"/>
+      <category term="JSON" scheme="http://39.99.158.50/tags/JSON/"/>
     
   </entry>
   
   <entry>
     <title>JQuery 高级复习（十三）</title>
-    <link href="http://39.99.158.50/;https://lxwise.github.io/2020/05/10/13jquery-gao-ji-bi-ji/"/>
-    <id>http://39.99.158.50/;https://lxwise.github.io/2020/05/10/13jquery-gao-ji-bi-ji/</id>
+    <link href="http://39.99.158.50/2020/05/10/13jquery-gao-ji-bi-ji/"/>
+    <id>http://39.99.158.50/2020/05/10/13jquery-gao-ji-bi-ji/</id>
     <published>2020-05-10T08:03:07.000Z</published>
     <updated>2020-05-10T06:40:15.940Z</updated>
     
@@ -113,21 +113,21 @@
     </summary>
     
     
-      <category term="JavaWEB" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/JavaWEB/"/>
+      <category term="JavaWEB" scheme="http://39.99.158.50/categories/JavaWEB/"/>
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/JavaWEB/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/categories/JavaWEB/%E5%A4%8D%E4%B9%A0/"/>
     
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/tags/%E5%A4%8D%E4%B9%A0/"/>
     
-      <category term="JavaWEB" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/JavaWEB/"/>
+      <category term="JavaWEB" scheme="http://39.99.158.50/tags/JavaWEB/"/>
     
   </entry>
   
   <entry>
     <title>JQuery 基础复习（十二）</title>
-    <link href="http://39.99.158.50/;https://lxwise.github.io/2020/05/10/12jquery-ji-chu-bi-ji/"/>
-    <id>http://39.99.158.50/;https://lxwise.github.io/2020/05/10/12jquery-ji-chu-bi-ji/</id>
+    <link href="http://39.99.158.50/2020/05/10/12jquery-ji-chu-bi-ji/"/>
+    <id>http://39.99.158.50/2020/05/10/12jquery-ji-chu-bi-ji/</id>
     <published>2020-05-10T07:53:07.000Z</published>
     <updated>2020-05-10T06:40:15.935Z</updated>
     
@@ -148,21 +148,21 @@
     </summary>
     
     
-      <category term="JavaWEB" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/JavaWEB/"/>
+      <category term="JavaWEB" scheme="http://39.99.158.50/categories/JavaWEB/"/>
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/JavaWEB/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/categories/JavaWEB/%E5%A4%8D%E4%B9%A0/"/>
     
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/tags/%E5%A4%8D%E4%B9%A0/"/>
     
-      <category term="JavaWEB" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/JavaWEB/"/>
+      <category term="JavaWEB" scheme="http://39.99.158.50/tags/JavaWEB/"/>
     
   </entry>
   
   <entry>
     <title>Filter&amp;&amp;Listener复习（十一）</title>
-    <link href="http://39.99.158.50/;https://lxwise.github.io/2020/05/10/11filter-listener-bi-ji/"/>
-    <id>http://39.99.158.50/;https://lxwise.github.io/2020/05/10/11filter-listener-bi-ji/</id>
+    <link href="http://39.99.158.50/2020/05/10/11filter-listener-bi-ji/"/>
+    <id>http://39.99.158.50/2020/05/10/11filter-listener-bi-ji/</id>
     <published>2020-05-10T07:43:07.000Z</published>
     <updated>2020-05-10T06:40:15.938Z</updated>
     
@@ -181,21 +181,21 @@
     </summary>
     
     
-      <category term="JavaWEB" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/JavaWEB/"/>
+      <category term="JavaWEB" scheme="http://39.99.158.50/categories/JavaWEB/"/>
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/JavaWEB/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/categories/JavaWEB/%E5%A4%8D%E4%B9%A0/"/>
     
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/tags/%E5%A4%8D%E4%B9%A0/"/>
     
-      <category term="JavaWEB" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/JavaWEB/"/>
+      <category term="JavaWEB" scheme="http://39.99.158.50/tags/JavaWEB/"/>
     
   </entry>
   
   <entry>
     <title>JSP&amp;&amp;EL&amp;&amp;JSTL复习（十）</title>
-    <link href="http://39.99.158.50/;https://lxwise.github.io/2020/05/10/10el-jstl-bi-ji/"/>
-    <id>http://39.99.158.50/;https://lxwise.github.io/2020/05/10/10el-jstl-bi-ji/</id>
+    <link href="http://39.99.158.50/2020/05/10/10el-jstl-bi-ji/"/>
+    <id>http://39.99.158.50/2020/05/10/10el-jstl-bi-ji/</id>
     <published>2020-05-10T07:33:07.000Z</published>
     <updated>2020-05-10T06:40:15.932Z</updated>
     
@@ -216,21 +216,21 @@
     </summary>
     
     
-      <category term="JavaWEB" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/JavaWEB/"/>
+      <category term="JavaWEB" scheme="http://39.99.158.50/categories/JavaWEB/"/>
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/JavaWEB/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/categories/JavaWEB/%E5%A4%8D%E4%B9%A0/"/>
     
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/tags/%E5%A4%8D%E4%B9%A0/"/>
     
-      <category term="JavaWEB" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/JavaWEB/"/>
+      <category term="JavaWEB" scheme="http://39.99.158.50/tags/JavaWEB/"/>
     
   </entry>
   
   <entry>
     <title>会话技术&amp;&amp;JSP复习（九）</title>
-    <link href="http://39.99.158.50/;https://lxwise.github.io/2020/05/10/09cookie-session-bi-ji/"/>
-    <id>http://39.99.158.50/;https://lxwise.github.io/2020/05/10/09cookie-session-bi-ji/</id>
+    <link href="http://39.99.158.50/2020/05/10/09cookie-session-bi-ji/"/>
+    <id>http://39.99.158.50/2020/05/10/09cookie-session-bi-ji/</id>
     <published>2020-05-10T07:23:07.000Z</published>
     <updated>2020-05-10T06:40:15.937Z</updated>
     
@@ -251,21 +251,21 @@
     </summary>
     
     
-      <category term="JavaWEB" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/JavaWEB/"/>
+      <category term="JavaWEB" scheme="http://39.99.158.50/categories/JavaWEB/"/>
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/JavaWEB/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/categories/JavaWEB/%E5%A4%8D%E4%B9%A0/"/>
     
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/tags/%E5%A4%8D%E4%B9%A0/"/>
     
-      <category term="JavaWEB" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/JavaWEB/"/>
+      <category term="JavaWEB" scheme="http://39.99.158.50/tags/JavaWEB/"/>
     
   </entry>
   
   <entry>
     <title>Response对象&amp;&amp;ServletContext对象复习（八）</title>
-    <link href="http://39.99.158.50/;https://lxwise.github.io/2020/05/10/08response-bi-ji/"/>
-    <id>http://39.99.158.50/;https://lxwise.github.io/2020/05/10/08response-bi-ji/</id>
+    <link href="http://39.99.158.50/2020/05/10/08response-bi-ji/"/>
+    <id>http://39.99.158.50/2020/05/10/08response-bi-ji/</id>
     <published>2020-05-10T07:13:07.000Z</published>
     <updated>2020-05-10T06:40:15.930Z</updated>
     
@@ -285,21 +285,21 @@
     </summary>
     
     
-      <category term="JavaWEB" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/JavaWEB/"/>
+      <category term="JavaWEB" scheme="http://39.99.158.50/categories/JavaWEB/"/>
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/JavaWEB/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/categories/JavaWEB/%E5%A4%8D%E4%B9%A0/"/>
     
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/tags/%E5%A4%8D%E4%B9%A0/"/>
     
-      <category term="JavaWEB" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/JavaWEB/"/>
+      <category term="JavaWEB" scheme="http://39.99.158.50/tags/JavaWEB/"/>
     
   </entry>
   
   <entry>
     <title>Servlet&amp;&amp;HTTP&amp;&amp;Request复习（七）</title>
-    <link href="http://39.99.158.50/;https://lxwise.github.io/2020/05/10/07servlet-http-request-bi-ji/"/>
-    <id>http://39.99.158.50/;https://lxwise.github.io/2020/05/10/07servlet-http-request-bi-ji/</id>
+    <link href="http://39.99.158.50/2020/05/10/07servlet-http-request-bi-ji/"/>
+    <id>http://39.99.158.50/2020/05/10/07servlet-http-request-bi-ji/</id>
     <published>2020-05-10T07:03:07.000Z</published>
     <updated>2020-05-10T06:40:15.933Z</updated>
     
@@ -319,21 +319,21 @@
     </summary>
     
     
-      <category term="JavaWEB" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/JavaWEB/"/>
+      <category term="JavaWEB" scheme="http://39.99.158.50/categories/JavaWEB/"/>
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/JavaWEB/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/categories/JavaWEB/%E5%A4%8D%E4%B9%A0/"/>
     
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/tags/%E5%A4%8D%E4%B9%A0/"/>
     
-      <category term="JavaWEB" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/JavaWEB/"/>
+      <category term="JavaWEB" scheme="http://39.99.158.50/tags/JavaWEB/"/>
     
   </entry>
   
   <entry>
     <title>Tomcat&amp;&amp;Servlet复习（六）</title>
-    <link href="http://39.99.158.50/;https://lxwise.github.io/2020/05/10/06tomcat-servlet-bi-ji/"/>
-    <id>http://39.99.158.50/;https://lxwise.github.io/2020/05/10/06tomcat-servlet-bi-ji/</id>
+    <link href="http://39.99.158.50/2020/05/10/06tomcat-servlet-bi-ji/"/>
+    <id>http://39.99.158.50/2020/05/10/06tomcat-servlet-bi-ji/</id>
     <published>2020-05-10T06:53:07.000Z</published>
     <updated>2020-05-10T06:40:15.929Z</updated>
     
@@ -353,25 +353,25 @@
     </summary>
     
     
-      <category term="JavaWEB" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/JavaWEB/"/>
+      <category term="JavaWEB" scheme="http://39.99.158.50/categories/JavaWEB/"/>
     
-      <category term="Tomcat" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/JavaWEB/Tomcat/"/>
+      <category term="Tomcat" scheme="http://39.99.158.50/categories/JavaWEB/Tomcat/"/>
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/JavaWEB/Tomcat/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/categories/JavaWEB/Tomcat/%E5%A4%8D%E4%B9%A0/"/>
     
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/tags/%E5%A4%8D%E4%B9%A0/"/>
     
-      <category term="JavaWEB" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/JavaWEB/"/>
+      <category term="JavaWEB" scheme="http://39.99.158.50/tags/JavaWEB/"/>
     
-      <category term="Tomcat" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/Tomcat/"/>
+      <category term="Tomcat" scheme="http://39.99.158.50/tags/Tomcat/"/>
     
   </entry>
   
   <entry>
     <title>XML复习（五）</title>
-    <link href="http://39.99.158.50/;https://lxwise.github.io/2020/05/10/05xml-bi-ji/"/>
-    <id>http://39.99.158.50/;https://lxwise.github.io/2020/05/10/05xml-bi-ji/</id>
+    <link href="http://39.99.158.50/2020/05/10/05xml-bi-ji/"/>
+    <id>http://39.99.158.50/2020/05/10/05xml-bi-ji/</id>
     <published>2020-05-10T06:43:07.000Z</published>
     <updated>2020-05-10T06:40:15.926Z</updated>
     
@@ -392,21 +392,21 @@
     </summary>
     
     
-      <category term="XML" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/XML/"/>
+      <category term="XML" scheme="http://39.99.158.50/categories/XML/"/>
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/XML/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/categories/XML/%E5%A4%8D%E4%B9%A0/"/>
     
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/tags/%E5%A4%8D%E4%B9%A0/"/>
     
-      <category term="XML" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/XML/"/>
+      <category term="XML" scheme="http://39.99.158.50/tags/XML/"/>
     
   </entry>
   
   <entry>
     <title>JavaScript复习（四）</title>
-    <link href="http://39.99.158.50/;https://lxwise.github.io/2020/05/10/04javascript-gao-ji-bi-ji/"/>
-    <id>http://39.99.158.50/;https://lxwise.github.io/2020/05/10/04javascript-gao-ji-bi-ji/</id>
+    <link href="http://39.99.158.50/2020/05/10/04javascript-gao-ji-bi-ji/"/>
+    <id>http://39.99.158.50/2020/05/10/04javascript-gao-ji-bi-ji/</id>
     <published>2020-05-10T06:33:07.000Z</published>
     <updated>2020-05-10T06:40:15.928Z</updated>
     
@@ -426,25 +426,25 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/JavaScript/"/>
+      <category term="JavaScript" scheme="http://39.99.158.50/categories/JavaScript/"/>
     
-      <category term="DOM" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/JavaScript/DOM/"/>
+      <category term="DOM" scheme="http://39.99.158.50/categories/JavaScript/DOM/"/>
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/JavaScript/DOM/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/categories/JavaScript/DOM/%E5%A4%8D%E4%B9%A0/"/>
     
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/tags/%E5%A4%8D%E4%B9%A0/"/>
     
-      <category term="JavaScript" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="http://39.99.158.50/tags/JavaScript/"/>
     
-      <category term="DOM" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/DOM/"/>
+      <category term="DOM" scheme="http://39.99.158.50/tags/DOM/"/>
     
   </entry>
   
   <entry>
     <title>JavaScript复习（三）</title>
-    <link href="http://39.99.158.50/;https://lxwise.github.io/2020/05/10/03javascript-ji-chu-bi-ji/"/>
-    <id>http://39.99.158.50/;https://lxwise.github.io/2020/05/10/03javascript-ji-chu-bi-ji/</id>
+    <link href="http://39.99.158.50/2020/05/10/03javascript-ji-chu-bi-ji/"/>
+    <id>http://39.99.158.50/2020/05/10/03javascript-ji-chu-bi-ji/</id>
     <published>2020-05-10T06:23:07.000Z</published>
     <updated>2020-05-10T06:40:15.924Z</updated>
     
@@ -463,21 +463,21 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/JavaScript/"/>
+      <category term="JavaScript" scheme="http://39.99.158.50/categories/JavaScript/"/>
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/JavaScript/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/categories/JavaScript/%E5%A4%8D%E4%B9%A0/"/>
     
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/tags/%E5%A4%8D%E4%B9%A0/"/>
     
-      <category term="JavaScript" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="http://39.99.158.50/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>HTML&amp;&amp;CSS复习（二）</title>
-    <link href="http://39.99.158.50/;https://lxwise.github.io/2020/05/10/02html-css-ke-tang-bi-ji/"/>
-    <id>http://39.99.158.50/;https://lxwise.github.io/2020/05/10/02html-css-ke-tang-bi-ji/</id>
+    <link href="http://39.99.158.50/2020/05/10/02html-css-ke-tang-bi-ji/"/>
+    <id>http://39.99.158.50/2020/05/10/02html-css-ke-tang-bi-ji/</id>
     <published>2020-05-10T06:13:07.000Z</published>
     <updated>2020-05-10T06:40:15.917Z</updated>
     
@@ -497,25 +497,25 @@
     </summary>
     
     
-      <category term="HTML" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/HTML/"/>
+      <category term="HTML" scheme="http://39.99.158.50/categories/HTML/"/>
     
-      <category term="CSS" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/HTML/CSS/"/>
+      <category term="CSS" scheme="http://39.99.158.50/categories/HTML/CSS/"/>
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/HTML/CSS/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/categories/HTML/CSS/%E5%A4%8D%E4%B9%A0/"/>
     
     
-      <category term="HTML" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/HTML/"/>
+      <category term="HTML" scheme="http://39.99.158.50/tags/HTML/"/>
     
-      <category term="CSS" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/CSS/"/>
+      <category term="复习" scheme="http://39.99.158.50/tags/%E5%A4%8D%E4%B9%A0/"/>
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="CSS" scheme="http://39.99.158.50/tags/CSS/"/>
     
   </entry>
   
   <entry>
     <title>HTML复习（一）</title>
-    <link href="http://39.99.158.50/;https://lxwise.github.io/2020/05/10/01html-ke-tang-bi-ji/"/>
-    <id>http://39.99.158.50/;https://lxwise.github.io/2020/05/10/01html-ke-tang-bi-ji/</id>
+    <link href="http://39.99.158.50/2020/05/10/01html-ke-tang-bi-ji/"/>
+    <id>http://39.99.158.50/2020/05/10/01html-ke-tang-bi-ji/</id>
     <published>2020-05-10T06:03:07.000Z</published>
     <updated>2020-05-10T06:40:15.921Z</updated>
     
@@ -535,21 +535,21 @@
     </summary>
     
     
-      <category term="HTML" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/HTML/"/>
+      <category term="HTML" scheme="http://39.99.158.50/categories/HTML/"/>
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/HTML/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/categories/HTML/%E5%A4%8D%E4%B9%A0/"/>
     
     
-      <category term="HTML" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/HTML/"/>
+      <category term="HTML" scheme="http://39.99.158.50/tags/HTML/"/>
     
-      <category term="复习" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/%E5%A4%8D%E4%B9%A0/"/>
+      <category term="复习" scheme="http://39.99.158.50/tags/%E5%A4%8D%E4%B9%A0/"/>
     
   </entry>
   
   <entry>
     <title>如何设置docker服务器和容器的自启动</title>
-    <link href="http://39.99.158.50/;https://lxwise.github.io/2019/06/27/ru-he-she-zhi-docker-fu-wu-qi-he-rong-qi-de-zi-qi-dong/"/>
-    <id>http://39.99.158.50/;https://lxwise.github.io/2019/06/27/ru-he-she-zhi-docker-fu-wu-qi-he-rong-qi-de-zi-qi-dong/</id>
+    <link href="http://39.99.158.50/2019/06/27/ru-he-she-zhi-docker-fu-wu-qi-he-rong-qi-de-zi-qi-dong/"/>
+    <id>http://39.99.158.50/2019/06/27/ru-he-she-zhi-docker-fu-wu-qi-he-rong-qi-de-zi-qi-dong/</id>
     <published>2019-06-27T14:29:57.000Z</published>
     <updated>2020-04-27T14:33:10.817Z</updated>
     
@@ -567,21 +567,21 @@
     </summary>
     
     
-      <category term="linux" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/linux/"/>
+      <category term="linux" scheme="http://39.99.158.50/categories/linux/"/>
     
-      <category term="docker" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/linux/docker/"/>
+      <category term="docker" scheme="http://39.99.158.50/categories/linux/docker/"/>
     
     
-      <category term="linux" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/linux/"/>
+      <category term="linux" scheme="http://39.99.158.50/tags/linux/"/>
     
-      <category term="docker" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/docker/"/>
+      <category term="docker" scheme="http://39.99.158.50/tags/docker/"/>
     
   </entry>
   
   <entry>
     <title>如何在linux上装jdk1.8并配置环境</title>
-    <link href="http://39.99.158.50/;https://lxwise.github.io/2019/06/27/ru-he-zai-linux-shang-zhuang-jdk1-8-bing-pei-zhi-huan-jing/"/>
-    <id>http://39.99.158.50/;https://lxwise.github.io/2019/06/27/ru-he-zai-linux-shang-zhuang-jdk1-8-bing-pei-zhi-huan-jing/</id>
+    <link href="http://39.99.158.50/2019/06/27/ru-he-zai-linux-shang-zhuang-jdk1-8-bing-pei-zhi-huan-jing/"/>
+    <id>http://39.99.158.50/2019/06/27/ru-he-zai-linux-shang-zhuang-jdk1-8-bing-pei-zhi-huan-jing/</id>
     <published>2019-06-27T13:13:17.000Z</published>
     <updated>2020-04-27T14:29:27.641Z</updated>
     
@@ -600,19 +600,19 @@
     </summary>
     
     
-      <category term="linux jdk" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/linux-jdk/"/>
+      <category term="linux jdk" scheme="http://39.99.158.50/categories/linux-jdk/"/>
     
     
-      <category term="linux" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/linux/"/>
+      <category term="linux" scheme="http://39.99.158.50/tags/linux/"/>
     
-      <category term="jdk" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/jdk/"/>
+      <category term="jdk" scheme="http://39.99.158.50/tags/jdk/"/>
     
   </entry>
   
   <entry>
     <title>Hexo博客主题美化之新增看板娘</title>
-    <link href="http://39.99.158.50/;https://lxwise.github.io/2019/06/26/hexo-bo-ke-zhu-ti-mei-hua-zhi-xin-zeng-kan-ban-niang/"/>
-    <id>http://39.99.158.50/;https://lxwise.github.io/2019/06/26/hexo-bo-ke-zhu-ti-mei-hua-zhi-xin-zeng-kan-ban-niang/</id>
+    <link href="http://39.99.158.50/2019/06/26/hexo-bo-ke-zhu-ti-mei-hua-zhi-xin-zeng-kan-ban-niang/"/>
+    <id>http://39.99.158.50/2019/06/26/hexo-bo-ke-zhu-ti-mei-hua-zhi-xin-zeng-kan-ban-niang/</id>
     <published>2019-06-26T13:31:55.000Z</published>
     <updated>2020-04-26T14:12:54.628Z</updated>
     
@@ -629,19 +629,19 @@
     </summary>
     
     
-      <category term="-hexo -live2d -主题" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/hexo-live2d-%E4%B8%BB%E9%A2%98/"/>
+      <category term="-hexo -live2d -主题" scheme="http://39.99.158.50/categories/hexo-live2d-%E4%B8%BB%E9%A2%98/"/>
     
     
-      <category term="live2d" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/live2d/"/>
+      <category term="live2d" scheme="http://39.99.158.50/tags/live2d/"/>
     
-      <category term="hexo" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="http://39.99.158.50/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>live2d看板娘一览图</title>
-    <link href="http://39.99.158.50/;https://lxwise.github.io/2019/06/26/live2d-kan-ban-niang-yi-lan-tu/"/>
-    <id>http://39.99.158.50/;https://lxwise.github.io/2019/06/26/live2d-kan-ban-niang-yi-lan-tu/</id>
+    <link href="http://39.99.158.50/2019/06/26/live2d-kan-ban-niang-yi-lan-tu/"/>
+    <id>http://39.99.158.50/2019/06/26/live2d-kan-ban-niang-yi-lan-tu/</id>
     <published>2019-06-26T13:04:11.000Z</published>
     <updated>2020-04-26T15:02:05.099Z</updated>
     
@@ -658,17 +658,17 @@
     </summary>
     
     
-      <category term="-live2d -主题" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/live2d-%E4%B8%BB%E9%A2%98/"/>
+      <category term="-live2d -主题" scheme="http://39.99.158.50/categories/live2d-%E4%B8%BB%E9%A2%98/"/>
     
     
-      <category term="-live2d -hexo" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/live2d-hexo/"/>
+      <category term="-live2d -hexo" scheme="http://39.99.158.50/tags/live2d-hexo/"/>
     
   </entry>
   
   <entry>
     <title>使用Hexo为博客更换自己喜欢的主题</title>
-    <link href="http://39.99.158.50/;https://lxwise.github.io/2019/06/26/shi-yong-hexo-wei-bo-ke-geng-huan-zi-ji-xi-huan-de-zhu-ti/"/>
-    <id>http://39.99.158.50/;https://lxwise.github.io/2019/06/26/shi-yong-hexo-wei-bo-ke-geng-huan-zi-ji-xi-huan-de-zhu-ti/</id>
+    <link href="http://39.99.158.50/2019/06/26/shi-yong-hexo-wei-bo-ke-geng-huan-zi-ji-xi-huan-de-zhu-ti/"/>
+    <id>http://39.99.158.50/2019/06/26/shi-yong-hexo-wei-bo-ke-geng-huan-zi-ji-xi-huan-de-zhu-ti/</id>
     <published>2019-06-26T11:58:05.000Z</published>
     <updated>2020-04-26T13:58:07.792Z</updated>
     
@@ -685,14 +685,14 @@
     </summary>
     
     
-      <category term="hexo" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/hexo/"/>
+      <category term="hexo" scheme="http://39.99.158.50/categories/hexo/"/>
     
-      <category term="主题" scheme="http://39.99.158.50/;https://lxwise.github.io/categories/hexo/%E4%B8%BB%E9%A2%98/"/>
+      <category term="主题" scheme="http://39.99.158.50/categories/hexo/%E4%B8%BB%E9%A2%98/"/>
     
     
-      <category term="hexo" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="http://39.99.158.50/tags/hexo/"/>
     
-      <category term="主题" scheme="http://39.99.158.50/;https://lxwise.github.io/tags/%E4%B8%BB%E9%A2%98/"/>
+      <category term="主题" scheme="http://39.99.158.50/tags/%E4%B8%BB%E9%A2%98/"/>
     
   </entry>
   
