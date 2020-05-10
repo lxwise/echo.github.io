@@ -506,9 +506,9 @@
     
       <category term="HTML" scheme="http://39.99.158.50/tags/HTML/"/>
     
-      <category term="复习" scheme="http://39.99.158.50/tags/%E5%A4%8D%E4%B9%A0/"/>
-    
       <category term="CSS" scheme="http://39.99.158.50/tags/CSS/"/>
+    
+      <category term="复习" scheme="http://39.99.158.50/tags/%E5%A4%8D%E4%B9%A0/"/>
     
   </entry>
   
@@ -572,9 +572,9 @@
       <category term="docker" scheme="http://39.99.158.50/categories/linux/docker/"/>
     
     
-      <category term="docker" scheme="http://39.99.158.50/tags/docker/"/>
-    
       <category term="linux" scheme="http://39.99.158.50/tags/linux/"/>
+    
+      <category term="docker" scheme="http://39.99.158.50/tags/docker/"/>
     
   </entry>
   
