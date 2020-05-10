@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="不曾留得桃花影">
+    <meta name="keywords" content="redis复习（十五）, 不曾留得桃花影">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>不曾留得桃花影</title>
+    <title>redis复习（十五） | 不曾留得桃花影</title>
     <link rel="icon" type="image/png" href="/medias/logo.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -316,12 +316,12 @@ daovoice('update');
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">redis复习（十五）</h1>
                 </div>
             </div>
         </div>
@@ -444,12 +444,33 @@ daovoice('update');
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/复习/">
+                                <span class="chip bg-color">复习</span>
+                            </a>
+                        
+                            <a href="/tags/redis/">
+                                <span class="chip bg-color">redis</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/redis/" class="post-category">
+                                redis
+                            </a>
+                        
+                            <a href="/categories/redis/复习/" class="post-category">
+                                复习
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -489,8 +510,7 @@ daovoice('update');
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">title: redis复习（十五）</span><br><span class="line">author: echo</span><br><span class="line">date: 2020-05-10 16:23:07</span><br><span class="line">img:</span><br><span class="line">top:</span><br><span class="line">cover:</span><br><span class="line">coverImg:</span><br><span class="line">password:</span><br><span class="line">toc:</span><br><span class="line">mathjax:</span><br><span class="line">summary:</span><br><span class="line">categories:</span><br><span class="line">	- redis</span><br><span class="line">	- 复习</span><br><span class="line">tags:</span><br><span class="line">	- redis</span><br><span class="line">	- 复习</span><br></pre></td></tr></tbody></table></figure>
-<p>[TOC]</p>
+                <p>[TOC]</p>
 <h2 id="今日内容"><a href="#今日内容" class="headerlink" title="今日内容"></a>今日内容</h2><pre><code>1. redis
     1. 概念
     2. 下载安装
@@ -723,52 +743,30 @@ daovoice('update');
                jedis.set("username","zhangsan");
             //3. 关闭连接
             jedis.close();
-</code></pre><p>​        </p>
-<pre><code>* Jedis操作各种redis中的数据结构
-    1) 字符串类型 string
-        set
-        get
-
-         //1. 获取连接
-        Jedis jedis = new Jedis();//如果使用空参构造，默认值 "localhost",6379端口
-        //2. 操作
-        //存储
-        jedis.set("username","zhangsan");
-        //获取
-        String username = jedis.get("username");
-        System.out.println(username);
-
-        //可以使用setex()方法存储可以指定过期时间的 key value
-        jedis.setex("activecode",20,"hehe");//将activecode：hehe键值对存入redis，并且20秒后自动删除该键值对
-
-        //3. 关闭连接
-        jedis.close();
-
-    2) 哈希类型 hash ： map格式  
-        hset
-        hget
-        hgetAll
-        //1. 获取连接
-        Jedis jedis = new Jedis();//如果使用空参构造，默认值 "localhost",6379端口
-        //2. 操作
-        // 存储hash
-        jedis.hset("user","name","lisi");
-        jedis.hset("user","age","23");
-        jedis.hset("user","gender","female");
-
-        // 获取hash
-        String name = jedis.hget("user", "name");
-        System.out.println(name);
-</code></pre><p>​<br>                // 获取hash的所有map中的数据<br>                Map&lt;String, String&gt; user = jedis.hgetAll(“user”);</p>
-<pre><code>    // keyset
-    Set&lt;String&gt; keySet = user.keySet();
-    for (String key : keySet) {
-        //获取value
-        String value = user.get(key);
-        System.out.println(key + ":" + value);
-    }
+</code></pre><p>​<br>​        * Jedis操作各种redis中的数据结构<br>​            1) 字符串类型 string<br>​                set<br>​                get<br>​<br>                 //1. 获取连接<br>                Jedis jedis = new Jedis();//如果使用空参构造，默认值 “localhost”,6379端口<br>                //2. 操作<br>                //存储<br>                jedis.set(“username”,”zhangsan”);<br>                //获取<br>                String username = jedis.get(“username”);<br>                System.out.println(username);</p>
+<pre><code>    //可以使用setex()方法存储可以指定过期时间的 key value
+    jedis.setex("activecode",20,"hehe");//将activecode：hehe键值对存入redis，并且20秒后自动删除该键值对
 
     //3. 关闭连接
+    jedis.close();
+
+2) 哈希类型 hash ： map格式  
+    hset
+    hget
+    hgetAll
+    //1. 获取连接
+    Jedis jedis = new Jedis();//如果使用空参构造，默认值 "localhost",6379端口
+    //2. 操作
+    // 存储hash
+    jedis.hset("user","name","lisi");
+    jedis.hset("user","age","23");
+    jedis.hset("user","gender","female");
+
+    // 获取hash
+    String name = jedis.hget("user", "name");
+    System.out.println(name);
+</code></pre><p>​<br>​                // 获取hash的所有map中的数据<br>​                Map&lt;String, String&gt; user = jedis.hgetAll(“user”);<br>​<br>                // keyset<br>                Set<string> keySet = user.keySet();<br>                for (String key : keySet) {<br>                    //获取value<br>                    String value = user.get(key);<br>                    System.out.println(key + “:” + value);<br>                }</string></p>
+<pre><code>    //3. 关闭连接
     jedis.close();
 
 
@@ -810,12 +808,8 @@ daovoice('update');
     //1. 获取连接
     Jedis jedis = new Jedis();//如果使用空参构造，默认值 "localhost",6379端口
     //2. 操作
-</code></pre><p>​<br>                // set 存储<br>                jedis.sadd(“myset”,”java”,”php”,”c++”);</p>
-<pre><code>    // set 获取
-    Set&lt;String&gt; myset = jedis.smembers("myset");
-    System.out.println(myset);
-
-    //3. 关闭连接
+</code></pre><p>​<br>​                // set 存储<br>​                jedis.sadd(“myset”,”java”,”php”,”c++”);<br>​<br>                // set 获取<br>                Set<string> myset = jedis.smembers(“myset”);<br>                System.out.println(myset);</string></p>
+<pre><code>    //3. 关闭连接
     jedis.close();
 5) 有序集合类型 sortedset：不允许重复元素，且元素有顺序
     zadd
@@ -833,25 +827,13 @@ daovoice('update');
     Set&lt;String&gt; mysortedset = jedis.zrange("mysortedset", 0, -1);
 
     System.out.println(mysortedset);
-</code></pre><p>​<br>                //3. 关闭连接<br>                jedis.close();</p>
-<p>​        </p>
-<pre><code>* jedis连接池： JedisPool
-    * 使用：
-        1. 创建JedisPool连接池对象
-        2. 调用方法 getResource()方法获取Jedis连接
-            //0.创建一个配置对象
-            JedisPoolConfig config = new JedisPoolConfig();
-            config.setMaxTotal(50);
-            config.setMaxIdle(10);
-
-            //1.创建Jedis连接池对象
-            JedisPool jedisPool = new JedisPool(config,"localhost",6379);
-
-            //2.获取连接
-            Jedis jedis = jedisPool.getResource();
-            //3. 使用
-            jedis.set("hehe","heihei");
-</code></pre><p>​<br>                    //4. 关闭 归还到连接池中<br>                    jedis.close();</p>
+</code></pre><p>​<br>​                //3. 关闭连接<br>​                jedis.close();</p>
+<p>​<br>​        <em> jedis连接池： JedisPool<br>​            </em> 使用：<br>​                1. 创建JedisPool连接池对象<br>​                2. 调用方法 getResource()方法获取Jedis连接<br>​                    //0.创建一个配置对象<br>​                    JedisPoolConfig config = new JedisPoolConfig();<br>​                    config.setMaxTotal(50);<br>​                    config.setMaxIdle(10);<br>​<br>                    //1.创建Jedis连接池对象<br>                    JedisPool jedisPool = new JedisPool(config,”localhost”,6379);</p>
+<pre><code>//2.获取连接
+Jedis jedis = jedisPool.getResource();
+//3. 使用
+jedis.set("hehe","heihei");
+</code></pre><p>​<br>​                    //4. 关闭 归还到连接池中<br>​                    jedis.close();<br>​            </p>
 <pre><code>* 连接池工具类
     public class JedisPoolUtils {
 
@@ -875,15 +857,9 @@ daovoice('update');
 
             //初始化JedisPool
             jedisPool = new JedisPool(config,pro.getProperty("host"),Integer.parseInt(pro.getProperty("port")));
-</code></pre><p>​<br>​<br>                    }</p>
-<p>​<br>                    /**</p>
-<pre><code>     * 获取连接方法
-     */
-    public static Jedis getJedis(){
-        return jedisPool.getResource();
-    }
-}
-</code></pre><h2 id="案例："><a href="#案例：" class="headerlink" title="案例："></a>案例：</h2><pre><code>案例需求：
+</code></pre><p>​<br>​<br>​                    }</p>
+<p>​<br>​                    /*<em><br>​                     </em> 获取连接方法<br>​                     */<br>​                    public static Jedis getJedis(){<br>​                        return jedisPool.getResource();<br>​                    }<br>​                }</p>
+<h2 id="案例："><a href="#案例：" class="headerlink" title="案例："></a>案例：</h2><pre><code>案例需求：
     1. 提供index.html页面，页面中有一个省份 下拉列表
     2. 当 页面加载完成后 发送ajax请求，加载所有省份
 
@@ -973,7 +949,15 @@ daovoice('update');
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/复习/">
+                                    <span class="chip bg-color">复习</span>
+                                </a>
+                            
+                                <a href="/tags/redis/">
+                                    <span class="chip bg-color">redis</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1142,7 +1126,7 @@ daovoice('update');
         repo: 'lxwise.github.io',
         owner: 'lxwise',
         admin: "lxwise",
-        id: '2020-05-10T14-26-45',
+        id: '2020-05-10T16-23-07',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1175,15 +1159,23 @@ daovoice('update');
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/20.jpg" class="responsive-img" alt="redis复习（十五）">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">redis复习（十五）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1234567891011121314151617title: redis复习（十五）author: echodate: 2020-05-10 16:23:07img:top:cover:coverImg:password:toc:math
+                            [TOC]
+今日内容1. redis
+    1. 概念
+    2. 下载安装
+    3. 命令操作
+        1. 数据结构
+    4. 持久化操作
+    5. 使用Java客户端操作redis
+Redis1. 概念： re
                         
                     </div>
                     <div class="publish-info">
@@ -1192,13 +1184,33 @@ daovoice('update');
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            echo
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/redis/" class="post-category">
+                                    redis
+                                </a>
+                            
+                            <a href="/categories/redis/复习/" class="post-category">
+                                    复习
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/复习/">
+                        <span class="chip bg-color">复习</span>
+                    </a>
+                    
+                    <a href="/tags/redis/">
+                        <span class="chip bg-color">redis</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1213,15 +1225,19 @@ daovoice('update');
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/2.jpg" class="responsive-img" alt="AJAX&amp;&amp;JSON复习（十四）">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">AJAX&amp;&amp;JSON复习（十四）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            12345678910111213141516171819title: AJAX&amp;&amp;JSON复习（十四）author: echodate: 2020-05-10 16:13:07img:top:cover:coverImg:
+                            [TOC]
+今日内容1. AJAX：
+2. JSON
+AJAX：1. 概念： ASynchronous JavaScript And XML    异步的JavaScript 和 XML
+    1. 异步和同步：客户端和服务器端相互通信的
                         
                     </div>
                     <div class="publish-info">
@@ -1230,11 +1246,39 @@ daovoice('update');
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            echo
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/AJAX/" class="post-category">
+                                    AJAX
+                                </a>
+                            
+                            <a href="/categories/AJAX/JSON/" class="post-category">
+                                    JSON
+                                </a>
+                            
+                            <a href="/categories/AJAX/JSON/复习/" class="post-category">
+                                    复习
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/复习/">
+                        <span class="chip bg-color">复习</span>
+                    </a>
+                    
+                    <a href="/tags/AJAX/">
+                        <span class="chip bg-color">AJAX</span>
+                    </a>
+                    
+                    <a href="/tags/JSON/">
+                        <span class="chip bg-color">JSON</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1422,7 +1466,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             |&nbsp;Theme&nbsp;<a href="https://github.com/lxwise" target="_blank">Echo</a>
             <br>
             
-            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">38.8k</span>&nbsp;字
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">37k</span>&nbsp;字
             
             
             

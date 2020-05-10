@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="不曾留得桃花影">
+    <meta name="keywords" content="Response对象&amp;&amp;ServletContext对象复习（八）, 不曾留得桃花影">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>不曾留得桃花影</title>
+    <title>Response对象&amp;&amp;ServletContext对象复习（八） | 不曾留得桃花影</title>
     <link rel="icon" type="image/png" href="/medias/logo.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -316,12 +316,12 @@ daovoice('update');
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">Response对象&amp;&amp;ServletContext对象复习（八）</h1>
                 </div>
             </div>
         </div>
@@ -444,12 +444,33 @@ daovoice('update');
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/复习/">
+                                <span class="chip bg-color">复习</span>
+                            </a>
+                        
+                            <a href="/tags/JavaWEB/">
+                                <span class="chip bg-color">JavaWEB</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/JavaWEB/" class="post-category">
+                                JavaWEB
+                            </a>
+                        
+                            <a href="/categories/JavaWEB/复习/" class="post-category">
+                                复习
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -467,7 +488,7 @@ daovoice('update');
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.6k
+                    1.5k
                 </div>
                 
 
@@ -489,8 +510,7 @@ daovoice('update');
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">title: Response对象&amp;&amp;ServletContext对象复习（八）</span><br><span class="line">author: echo</span><br><span class="line">date: 2020-05-10 15:13:07</span><br><span class="line">img:</span><br><span class="line">top:</span><br><span class="line">cover:</span><br><span class="line">coverImg:</span><br><span class="line">password:</span><br><span class="line">toc:</span><br><span class="line">mathjax:</span><br><span class="line">summary:</span><br><span class="line">categories:</span><br><span class="line">	- JavaWEB</span><br><span class="line">	- 复习</span><br><span class="line">tags:</span><br><span class="line">	- JavaWEB</span><br><span class="line">	- 复习</span><br></pre></td></tr></tbody></table></figure>
-<p>[TOC]</p>
+                <p>[TOC]</p>
 <h1 id="今日内容"><a href="#今日内容" class="headerlink" title="今日内容"></a>今日内容</h1><pre><code>1. HTTP协议：响应消息
 2. Response对象
 3. ServletContext对象
@@ -515,20 +535,8 @@ daovoice('update');
                             * 404（请求路径没有对应的资源） 
                             * 405：请求方式没有对应的doXxx方法
                     5. 5xx：服务器端错误。代表：500(服务器内部出现异常)
-</code></pre><p>​                    </p>
-<pre><code>    2. 响应头：
-        1. 格式：头名称： 值
-        2. 常见的响应头：
-            1. Content-Type：服务器告诉客户端本次响应体数据格式以及编码格式
-            2. Content-disposition：服务器告诉客户端以什么格式打开响应体数据
-                * 值：
-                    * in-line:默认值,在当前页面内打开
-                    * attachment;filename=xxx：以附件形式打开响应体。文件下载
-    3. 响应空行
-    4. 响应体:传输的数据
-
-
-* 响应字符串格式
+</code></pre><p>​<br>​            2. 响应头：<br>​                1. 格式：头名称： 值<br>​                2. 常见的响应头：<br>​                    1. Content-Type：服务器告诉客户端本次响应体数据格式以及编码格式<br>​                    2. Content-disposition：服务器告诉客户端以什么格式打开响应体数据<br>​                        <em> 值：<br>​                            </em> in-line:默认值,在当前页面内打开<br>​                            * attachment;filename=xxx：以附件形式打开响应体。文件下载<br>​            3. 响应空行<br>​            4. 响应体:传输的数据</p>
+<pre><code>* 响应字符串格式
     HTTP/1.1 200 OK
     Content-Type: text/html;charset=UTF-8
     Content-Length: 101
@@ -758,7 +766,15 @@ daovoice('update');
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/复习/">
+                                    <span class="chip bg-color">复习</span>
+                                </a>
+                            
+                                <a href="/tags/JavaWEB/">
+                                    <span class="chip bg-color">JavaWEB</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -927,7 +943,7 @@ daovoice('update');
         repo: 'lxwise.github.io',
         owner: 'lxwise',
         admin: "lxwise",
-        id: '2020-05-10T14-26-45',
+        id: '2020-05-10T15-13-07',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -959,15 +975,21 @@ daovoice('update');
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/4.jpg" class="responsive-img" alt="会话技术&amp;&amp;JSP复习（九）">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">会话技术&amp;&amp;JSP复习（九）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1234567891011121314151617title: 会话技术&amp;&amp;JSP复习（九）author: echodate: 2020-05-10 15:23:07img:top:cover:coverImg:passwo
+                            [TOC]
+今日内容1. 会话技术
+    1. Cookie
+    2. Session
+2. JSP：入门学习
+会话技术1. 会话：一次会话中包含多次请求和响应。
+    * 一次会话：浏览器第一次给服务器资源发送请求，会话建立，直到
                         
                     </div>
                     <div class="publish-info">
@@ -976,11 +998,31 @@ daovoice('update');
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            echo
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JavaWEB/" class="post-category">
+                                    JavaWEB
+                                </a>
+                            
+                            <a href="/categories/JavaWEB/复习/" class="post-category">
+                                    复习
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/复习/">
+                        <span class="chip bg-color">复习</span>
+                    </a>
+                    
+                    <a href="/tags/JavaWEB/">
+                        <span class="chip bg-color">JavaWEB</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -996,15 +1038,25 @@ daovoice('update');
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/1.jpg" class="responsive-img" alt="Servlet&amp;&amp;HTTP&amp;&amp;Request复习（七）">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">Servlet&amp;&amp;HTTP&amp;&amp;Request复习（七）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1234567891011121314151617title: Servlet&amp;&amp;HTTP&amp;&amp;Request复习（七）author: echodate: 2020-05-10 15:03:07img:top:
+                            [TOC]
+今日内容：1. Servlet
+2. HTTP协议
+3. Request
+Servlet：1. 概念
+2. 步骤
+3. 执行原理
+4. 生命周期
+5. Servlet3.0 注解配置
+6. Servlet的体系结构    
+  
                         
                     </div>
                     <div class="publish-info">
@@ -1013,11 +1065,31 @@ daovoice('update');
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            echo
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JavaWEB/" class="post-category">
+                                    JavaWEB
+                                </a>
+                            
+                            <a href="/categories/JavaWEB/复习/" class="post-category">
+                                    复习
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/复习/">
+                        <span class="chip bg-color">复习</span>
+                    </a>
+                    
+                    <a href="/tags/JavaWEB/">
+                        <span class="chip bg-color">JavaWEB</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1205,7 +1277,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             |&nbsp;Theme&nbsp;<a href="https://github.com/lxwise" target="_blank">Echo</a>
             <br>
             
-            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">38.8k</span>&nbsp;字
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">37k</span>&nbsp;字
             
             
             

@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="不曾留得桃花影">
+    <meta name="keywords" content="XML复习（五）, 不曾留得桃花影">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>不曾留得桃花影</title>
+    <title>XML复习（五） | 不曾留得桃花影</title>
     <link rel="icon" type="image/png" href="/medias/logo.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -316,12 +316,12 @@ daovoice('update');
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">XML复习（五）</h1>
                 </div>
             </div>
         </div>
@@ -444,12 +444,33 @@ daovoice('update');
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/复习/">
+                                <span class="chip bg-color">复习</span>
+                            </a>
+                        
+                            <a href="/tags/XML/">
+                                <span class="chip bg-color">XML</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/XML/" class="post-category">
+                                XML
+                            </a>
+                        
+                            <a href="/categories/XML/复习/" class="post-category">
+                                复习
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -489,13 +510,7 @@ daovoice('update');
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>title: XML复习（五）<br>author: echo<br>date: 2020-05-10 14:43:07<br>img:<br>top:<br>cover:<br>coverImg:<br>password:<br>toc:<br>mathjax:<br>summary:<br>categories:</p>
-<pre><code>- XML
-- 复习
-</code></pre><p>tags:</p>
-<pre><code>- XML
-- 复习
-</code></pre><p>[TOC]</p>
+                <p>[TOC]</p>
 <h1 id="今日内容"><a href="#今日内容" class="headerlink" title="今日内容"></a>今日内容</h1><pre><code>1. XML
     1. 概念
     2. 语法
@@ -563,35 +578,30 @@ daovoice('update');
         5. 文本：
             * CDATA区：在该区域中的数据会被原样展示
                 * 格式：  &lt;![CDATA[ 数据 ]]&gt;
-</code></pre><p>​    </p>
-<pre><code>* 约束：规定xml文档的书写规则
-    * 作为框架的使用者(程序员)：
-        1. 能够在xml中引入约束文档
-        2. 能够简单的读懂约束文档
-
-    * 分类：
-        1. DTD:一种简单的约束技术
-        2. Schema:一种复杂的约束技术
+</code></pre><p>​<br>​        <em> 约束：规定xml文档的书写规则<br>​            </em> 作为框架的使用者(程序员)：<br>​                1. 能够在xml中引入约束文档<br>​                2. 能够简单的读懂约束文档<br>​            </p>
+<pre><code>* 分类：
+    1. DTD:一种简单的约束技术
+    2. Schema:一种复杂的约束技术
 
 
-    * DTD：
-        * 引入dtd文档到xml文档中
-            * 内部dtd：将约束规则定义在xml文档中
-            * 外部dtd：将约束的规则定义在外部的dtd文件中
-                * 本地：&lt;!DOCTYPE 根标签名 SYSTEM "dtd文件的位置"&gt;
-                * 网络：&lt;!DOCTYPE 根标签名 PUBLIC "dtd文件名字" "dtd文件的位置URL"&gt;
+* DTD：
+    * 引入dtd文档到xml文档中
+        * 内部dtd：将约束规则定义在xml文档中
+        * 外部dtd：将约束的规则定义在外部的dtd文件中
+            * 本地：&lt;!DOCTYPE 根标签名 SYSTEM "dtd文件的位置"&gt;
+            * 网络：&lt;!DOCTYPE 根标签名 PUBLIC "dtd文件名字" "dtd文件的位置URL"&gt;
 
 
-    * Schema:
-        * 引入：
-            1.填写xml文档的根元素
-            2.引入xsi前缀.  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            3.引入xsd文件命名空间.  xsi:schemaLocation="http://www.itcast.cn/xml  student.xsd"
-            4.为每一个xsd约束声明一个前缀,作为标识  xmlns="http://www.itcast.cn/xml" 
+* Schema:
+    * 引入：
+        1.填写xml文档的根元素
+        2.引入xsi前缀.  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        3.引入xsd文件命名空间.  xsi:schemaLocation="http://www.itcast.cn/xml  student.xsd"
+        4.为每一个xsd约束声明一个前缀,作为标识  xmlns="http://www.itcast.cn/xml" 
 
-        &lt;students   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xmlns="http://www.itcast.cn/xml"
-            xsi:schemaLocation="http://www.itcast.cn/xml  student.xsd"&gt;
+    &lt;students   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.itcast.cn/xml"
+        xsi:schemaLocation="http://www.itcast.cn/xml  student.xsd"&gt;
 </code></pre><p>​    </p>
 <pre><code>3. 解析：操作xml文档，将文档中的数据读取到内存中
     * 操作xml文档
@@ -605,15 +615,8 @@ daovoice('update');
         2. SAX：逐行读取，基于事件驱动的。
             * 优点：不占内存。
             * 缺点：只能读取，不能增删改
-</code></pre><p>​        </p>
-<pre><code>* xml常见的解析器：
-    1. JAXP：sun公司提供的解析器，支持dom和sax两种思想
-    2. DOM4J：一款非常优秀的解析器
-    3. Jsoup：jsoup 是一款Java 的HTML解析器，可直接解析某个URL地址、HTML文本内容。它提供了一套非常省力的API，可通过DOM，CSS以及类似于jQuery的操作方法来取出和操作数据。
-    4. PULL：Android操作系统内置的解析器，sax方式的。
-
-
-* Jsoup：jsoup 是一款Java 的HTML解析器，可直接解析某个URL地址、HTML文本内容。它提供了一套非常省力的API，可通过DOM，CSS以及类似于jQuery的操作方法来取出和操作数据。
+</code></pre><p>​<br>​        * xml常见的解析器：<br>​            1. JAXP：sun公司提供的解析器，支持dom和sax两种思想<br>​            2. DOM4J：一款非常优秀的解析器<br>​            3. Jsoup：jsoup 是一款Java 的HTML解析器，可直接解析某个URL地址、HTML文本内容。它提供了一套非常省力的API，可通过DOM，CSS以及类似于jQuery的操作方法来取出和操作数据。<br>​            4. PULL：Android操作系统内置的解析器，sax方式的。</p>
+<pre><code>* Jsoup：jsoup 是一款Java 的HTML解析器，可直接解析某个URL地址、HTML文本内容。它提供了一套非常省力的API，可通过DOM，CSS以及类似于jQuery的操作方法来取出和操作数据。
     * 快速入门：
         * 步骤：
             1. 导入jar包
@@ -663,52 +666,36 @@ daovoice('update');
             * String html():获取标签体的所有内容(包括字标签的字符串内容)
     5. Node：节点对象
         * 是Document和Element的父类
-</code></pre><p>​            </p>
-<pre><code>* 快捷查询方式：
-    1. selector:选择器
-        * 使用的方法：Elements    select​(String cssQuery)
-            * 语法：参考Selector类中定义的语法
-    2. XPath：XPath即为XML路径语言，它是一种用来确定XML（标准通用标记语言的子集）文档中某部分位置的语言
-        * 使用Jsoup的Xpath需要额外导入jar包。
-        * 查询w3cshool参考手册，使用xpath的语法完成查询
-        * 代码：
-            //1.获取student.xml的path
-            String path = JsoupDemo6.class.getClassLoader().getResource("student.xml").getPath();
-            //2.获取Document对象
-            Document document = Jsoup.parse(new File(path), "utf-8");
+</code></pre><p>​<br>​        <em> 快捷查询方式：<br>​            1. selector:选择器<br>​                </em> 使用的方法：Elements    select​(String cssQuery)<br>​                    <em> 语法：参考Selector类中定义的语法<br>​            2. XPath：XPath即为XML路径语言，它是一种用来确定XML（标准通用标记语言的子集）文档中某部分位置的语言<br>​                </em> 使用Jsoup的Xpath需要额外导入jar包。<br>​                <em> 查询w3cshool参考手册，使用xpath的语法完成查询<br>​                </em> 代码：<br>​                    //1.获取student.xml的path<br>​                    String path = JsoupDemo6.class.getClassLoader().getResource(“student.xml”).getPath();<br>​                    //2.获取Document对象<br>​                    Document document = Jsoup.parse(new File(path), “utf-8”);<br>​<br>                    //3.根据document对象，创建JXDocument对象<br>                    JXDocument jxDocument = new JXDocument(document);</p>
+<pre><code>//4.结合xpath语法查询
+//4.1查询所有student标签
+List&lt;JXNode&gt; jxNodes = jxDocument.selN("//student");
+for (JXNode jxNode : jxNodes) {
+    System.out.println(jxNode);
+}
 
-            //3.根据document对象，创建JXDocument对象
-            JXDocument jxDocument = new JXDocument(document);
+System.out.println("--------------------");
 
-            //4.结合xpath语法查询
-            //4.1查询所有student标签
-            List&lt;JXNode&gt; jxNodes = jxDocument.selN("//student");
-            for (JXNode jxNode : jxNodes) {
-                System.out.println(jxNode);
-            }
+//4.2查询所有student标签下的name标签
+List&lt;JXNode&gt; jxNodes2 = jxDocument.selN("//student/name");
+for (JXNode jxNode : jxNodes2) {
+    System.out.println(jxNode);
+}
 
-            System.out.println("--------------------");
+System.out.println("--------------------");
 
-            //4.2查询所有student标签下的name标签
-            List&lt;JXNode&gt; jxNodes2 = jxDocument.selN("//student/name");
-            for (JXNode jxNode : jxNodes2) {
-                System.out.println(jxNode);
-            }
+//4.3查询student标签下带有id属性的name标签
+List&lt;JXNode&gt; jxNodes3 = jxDocument.selN("//student/name[@id]");
+for (JXNode jxNode : jxNodes3) {
+    System.out.println(jxNode);
+}
+System.out.println("--------------------");
+//4.4查询student标签下带有id属性的name标签 并且id属性值为itcast
 
-            System.out.println("--------------------");
-
-            //4.3查询student标签下带有id属性的name标签
-            List&lt;JXNode&gt; jxNodes3 = jxDocument.selN("//student/name[@id]");
-            for (JXNode jxNode : jxNodes3) {
-                System.out.println(jxNode);
-            }
-            System.out.println("--------------------");
-            //4.4查询student标签下带有id属性的name标签 并且id属性值为itcast
-
-            List&lt;JXNode&gt; jxNodes4 = jxDocument.selN("//student/name[@id='itcast']");
-            for (JXNode jxNode : jxNodes4) {
-                System.out.println(jxNode);
-            }
+List&lt;JXNode&gt; jxNodes4 = jxDocument.selN("//student/name[@id='itcast']");
+for (JXNode jxNode : jxNodes4) {
+    System.out.println(jxNode);
+}
 </code></pre><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -789,7 +776,15 @@ daovoice('update');
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/复习/">
+                                    <span class="chip bg-color">复习</span>
+                                </a>
+                            
+                                <a href="/tags/XML/">
+                                    <span class="chip bg-color">XML</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -958,7 +953,7 @@ daovoice('update');
         repo: 'lxwise.github.io',
         owner: 'lxwise',
         admin: "lxwise",
-        id: '2020-05-10T14-26-45',
+        id: '2020-05-10T14-43-07',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -990,15 +985,23 @@ daovoice('update');
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/8.jpg" class="responsive-img" alt="Tomcat&amp;&amp;Servlet复习（六）">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">Tomcat&amp;&amp;Servlet复习（六）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            12345678910111213141516171819title: Tomcat&amp;&amp;Servlet复习（六）author: echodate: 2020-05-10 14:53:07img:top:cover:cover
+                            [TOC]
+今日内容1. web相关概念回顾
+2. web服务器软件：Tomcat
+3. Servlet入门学习
+web相关概念回顾1. 软件架构
+    1. C/S：客户端/服务器端
+    2. B/S：浏览器/服务器端
+
+2. 资源
                         
                     </div>
                     <div class="publish-info">
@@ -1007,11 +1010,39 @@ daovoice('update');
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            echo
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JavaWEB/" class="post-category">
+                                    JavaWEB
+                                </a>
+                            
+                            <a href="/categories/JavaWEB/Tomcat/" class="post-category">
+                                    Tomcat
+                                </a>
+                            
+                            <a href="/categories/JavaWEB/Tomcat/复习/" class="post-category">
+                                    复习
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/复习/">
+                        <span class="chip bg-color">复习</span>
+                    </a>
+                    
+                    <a href="/tags/JavaWEB/">
+                        <span class="chip bg-color">JavaWEB</span>
+                    </a>
+                    
+                    <a href="/tags/Tomcat/">
+                        <span class="chip bg-color">Tomcat</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1027,15 +1058,22 @@ daovoice('update');
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/18.jpg" class="responsive-img" alt="JavaScript复习（四）">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">JavaScript复习（四）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            12345678910111213141516171819title: JavaScript复习（四）author: echodate: 2020-05-10 14:33:07img:top:cover:coverImg:password:
+                            [TOC]
+今日内容：1. JavaScript：
+    1. ECMAScript：
+    2. BOM：
+    3. DOM：
+        1. 事件
+DOM简单学习：为了满足案例要求* 功能：控制html文档的内容
+* 获取
                         
                     </div>
                     <div class="publish-info">
@@ -1044,11 +1082,39 @@ daovoice('update');
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            echo
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JavaScript/" class="post-category">
+                                    JavaScript
+                                </a>
+                            
+                            <a href="/categories/JavaScript/DOM/" class="post-category">
+                                    DOM
+                                </a>
+                            
+                            <a href="/categories/JavaScript/DOM/复习/" class="post-category">
+                                    复习
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/复习/">
+                        <span class="chip bg-color">复习</span>
+                    </a>
+                    
+                    <a href="/tags/JavaScript/">
+                        <span class="chip bg-color">JavaScript</span>
+                    </a>
+                    
+                    <a href="/tags/DOM/">
+                        <span class="chip bg-color">DOM</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1236,7 +1302,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             |&nbsp;Theme&nbsp;<a href="https://github.com/lxwise" target="_blank">Echo</a>
             <br>
             
-            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">38.8k</span>&nbsp;字
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">37k</span>&nbsp;字
             
             
             

@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="不曾留得桃花影">
+    <meta name="keywords" content="Servlet&amp;&amp;HTTP&amp;&amp;Request复习（七）, 不曾留得桃花影">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>不曾留得桃花影</title>
+    <title>Servlet&amp;&amp;HTTP&amp;&amp;Request复习（七） | 不曾留得桃花影</title>
     <link rel="icon" type="image/png" href="/medias/logo.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -316,12 +316,12 @@ daovoice('update');
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">Servlet&amp;&amp;HTTP&amp;&amp;Request复习（七）</h1>
                 </div>
             </div>
         </div>
@@ -444,12 +444,33 @@ daovoice('update');
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/复习/">
+                                <span class="chip bg-color">复习</span>
+                            </a>
+                        
+                            <a href="/tags/JavaWEB/">
+                                <span class="chip bg-color">JavaWEB</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/JavaWEB/" class="post-category">
+                                JavaWEB
+                            </a>
+                        
+                            <a href="/categories/JavaWEB/复习/" class="post-category">
+                                复习
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -467,7 +488,7 @@ daovoice('update');
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.6k
+                    2.5k
                 </div>
                 
 
@@ -489,8 +510,7 @@ daovoice('update');
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">title: Servlet&amp;&amp;HTTP&amp;&amp;Request复习（七）</span><br><span class="line">author: echo</span><br><span class="line">date: 2020-05-10 15:03:07</span><br><span class="line">img:</span><br><span class="line">top:</span><br><span class="line">cover:</span><br><span class="line">coverImg:</span><br><span class="line">password:</span><br><span class="line">toc:</span><br><span class="line">mathjax:</span><br><span class="line">summary:</span><br><span class="line">categories:</span><br><span class="line">	- JavaWEB</span><br><span class="line">	- 复习</span><br><span class="line">tags:</span><br><span class="line">	- JavaWEB</span><br><span class="line">	- 复习</span><br></pre></td></tr></tbody></table></figure>
-<p>[TOC]</p>
+                <p>[TOC]</p>
 <h1 id="今日内容："><a href="#今日内容：" class="headerlink" title="今日内容："></a>今日内容：</h1><pre><code>1. Servlet
 2. HTTP协议
 3. Request
@@ -629,25 +649,13 @@ daovoice('update');
                         * 在文件上传知识点后讲解
 
                 2. 再从流对象中拿数据
-</code></pre><p>​                </p>
-<pre><code>2. 其他功能：
-    1. 获取请求参数通用方式：不论get还是post请求方式都可以使用下列方法来获取请求参数
-        1. String getParameter(String name):根据参数名称获取参数值    username=zs&amp;password=123
-        2. String[] getParameterValues(String name):根据参数名称获取参数值的数组  hobby=xx&amp;hobby=game
-        3. Enumeration&lt;String&gt; getParameterNames():获取所有请求的参数名称
-        4. Map&lt;String,String[]&gt; getParameterMap():获取所有参数的map集合
-
-        * 中文乱码问题：
-            * get方式：tomcat 8 已经将get方式乱码问题解决了
-            * post方式：会乱码
-                * 解决：在获取参数前，设置request的编码request.setCharacterEncoding("utf-8");
-</code></pre><p>​                    </p>
-<pre><code>2. 请求转发：一种在服务器内部的资源跳转方式
-    1. 步骤：
-        1. 通过request对象获取请求转发器对象：RequestDispatcher getRequestDispatcher(String path)
-        2. 使用RequestDispatcher对象来进行转发：forward(ServletRequest request, ServletResponse response) 
-
-    2. 特点：
+</code></pre><p>​<br>​        2. 其他功能：<br>​            1. 获取请求参数通用方式：不论get还是post请求方式都可以使用下列方法来获取请求参数<br>​                1. String getParameter(String name):根据参数名称获取参数值    username=zs&amp;password=123<br>​                2. String[] getParameterValues(String name):根据参数名称获取参数值的数组  hobby=xx&amp;hobby=game<br>​                3. Enumeration<string> getParameterNames():获取所有请求的参数名称<br>​                4. Map&lt;String,String[]&gt; getParameterMap():获取所有参数的map集合<br>​    </string></p>
+<pre><code>* 中文乱码问题：
+    * get方式：tomcat 8 已经将get方式乱码问题解决了
+    * post方式：会乱码
+        * 解决：在获取参数前，设置request的编码request.setCharacterEncoding("utf-8");
+</code></pre><p>​<br>​            2. 请求转发：一种在服务器内部的资源跳转方式<br>​                1. 步骤：<br>​                    1. 通过request对象获取请求转发器对象：RequestDispatcher getRequestDispatcher(String path)<br>​                    2. 使用RequestDispatcher对象来进行转发：forward(ServletRequest request, ServletResponse response)<br>​    </p>
+<pre><code>    2. 特点：
         1. 浏览器地址栏路径不发生变化
         2. 只能转发到当前服务器内部资源中。
         3. 转发是一次请求
@@ -696,12 +704,8 @@ daovoice('update');
             private int id;
             private String username;
             private String password;
-</code></pre><p>​<br>                public int getId() {<br>                    return id;<br>                }</p>
-<pre><code>        public void setId(int id) {
-            this.id = id;
-        }
-
-        public String getUsername() {
+</code></pre><p>​<br>​                public int getId() {<br>​                    return id;<br>​                }<br>​<br>                public void setId(int id) {<br>                    this.id = id;<br>                }</p>
+<pre><code>        public String getUsername() {
             return username;
         }
 
@@ -771,45 +775,35 @@ daovoice('update');
         public static DataSource getDataSource(){
             return ds;
         }
-</code></pre><p>​<br>                /**</p>
-<pre><code>         * 获取连接Connection对象
-         */
-        public static Connection getConnection() throws SQLException {
-            return  ds.getConnection();
-        }
-    }
-5. 创建包cn.itcast.dao,创建类UserDao,提供login方法
+</code></pre><p>​<br>​                /*<em><br>​                 </em> 获取连接Connection对象<br>​                 */<br>​                public static Connection getConnection() throws SQLException {<br>​                    return  ds.getConnection();<br>​                }<br>​            }<br>​        5. 创建包cn.itcast.dao,创建类UserDao,提供login方法<br>​<br>            package cn.itcast.dao;</p>
+<pre><code>import cn.itcast.domain.User;
+import cn.itcast.util.JDBCUtils;
+import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.JdbcTemplate;
 
-    package cn.itcast.dao;
+/**
+ * 操作数据库中User表的类
+ */
+public class UserDao {
 
-    import cn.itcast.domain.User;
-    import cn.itcast.util.JDBCUtils;
-    import org.springframework.dao.DataAccessException;
-    import org.springframework.jdbc.core.BeanPropertyRowMapper;
-    import org.springframework.jdbc.core.JdbcTemplate;
+    //声明JDBCTemplate对象共用
+    private JdbcTemplate template = new JdbcTemplate(JDBCUtils.getDataSource());
 
     /**
-     * 操作数据库中User表的类
+     * 登录方法
+     * @param loginUser 只有用户名和密码
+     * @return user包含用户全部数据,没有查询到，返回null
      */
-    public class UserDao {
-
-        //声明JDBCTemplate对象共用
-        private JdbcTemplate template = new JdbcTemplate(JDBCUtils.getDataSource());
-
-        /**
-         * 登录方法
-         * @param loginUser 只有用户名和密码
-         * @return user包含用户全部数据,没有查询到，返回null
-         */
-        public User login(User loginUser){
-            try {
-                //1.编写sql
-                String sql = "select * from user where username = ? and password = ?";
-                //2.调用query方法
-                User user = template.queryForObject(sql,
-                        new BeanPropertyRowMapper&lt;User&gt;(User.class),
-                        loginUser.getUsername(), loginUser.getPassword());
-</code></pre><p>​<br>                        return user;<br>                    } catch (DataAccessException e) {<br>                        e.printStackTrace();//记录日志<br>                        return null;<br>                    }<br>                }<br>            }</p>
+    public User login(User loginUser){
+        try {
+            //1.编写sql
+            String sql = "select * from user where username = ? and password = ?";
+            //2.调用query方法
+            User user = template.queryForObject(sql,
+                    new BeanPropertyRowMapper&lt;User&gt;(User.class),
+                    loginUser.getUsername(), loginUser.getPassword());
+</code></pre><p>​<br>​                        return user;<br>​                    } catch (DataAccessException e) {<br>​                        e.printStackTrace();//记录日志<br>​                        return null;<br>​                    }<br>​                }<br>​            }<br>​        </p>
 <pre><code>6. 编写cn.itcast.web.servlet.LoginServlet类
     package cn.itcast.web.servlet;
 
@@ -822,13 +816,9 @@ daovoice('update');
     import javax.servlet.http.HttpServletRequest;
     import javax.servlet.http.HttpServletResponse;
     import java.io.IOException;
-</code></pre><p>​<br>            @WebServlet(“/loginServlet”)<br>            public class LoginServlet extends HttpServlet {</p>
-<p>​<br>                @Override<br>                protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {<br>                    //1.设置编码<br>                    req.setCharacterEncoding(“utf-8”);<br>                    //2.获取请求参数<br>                    String username = req.getParameter(“username”);<br>                    String password = req.getParameter(“password”);<br>                    //3.封装user对象<br>                    User loginUser = new User();<br>                    loginUser.setUsername(username);<br>                    loginUser.setPassword(password);</p>
-<pre><code>            //4.调用UserDao的login方法
-            UserDao dao = new UserDao();
-            User user = dao.login(loginUser);
-
-            //5.判断user
+</code></pre><p>​<br>​            @WebServlet(“/loginServlet”)<br>​            public class LoginServlet extends HttpServlet {</p>
+<p>​<br>​                @Override<br>​                protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {<br>​                    //1.设置编码<br>​                    req.setCharacterEncoding(“utf-8”);<br>​                    //2.获取请求参数<br>​                    String username = req.getParameter(“username”);<br>​                    String password = req.getParameter(“password”);<br>​                    //3.封装user对象<br>​                    User loginUser = new User();<br>​                    loginUser.setUsername(username);<br>​                    loginUser.setPassword(password);<br>​<br>                    //4.调用UserDao的login方法<br>                    UserDao dao = new UserDao();<br>                    User user = dao.login(loginUser);</p>
+<pre><code>            //5.判断user
             if(user == null){
                 //登录失败
                 req.getRequestDispatcher("/failServlet").forward(req,resp);
@@ -863,7 +853,7 @@ daovoice('update');
                 //输出
                 response.getWriter().write("登录成功！"+user.getUsername()+",欢迎您");
             }
-</code></pre><p>​<br>                }        </p>
+</code></pre><p>​<br>​                }        </p>
 <pre><code>    @WebServlet("/failServlet")
     public class FailServlet extends HttpServlet {
         protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -987,7 +977,15 @@ daovoice('update');
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/复习/">
+                                    <span class="chip bg-color">复习</span>
+                                </a>
+                            
+                                <a href="/tags/JavaWEB/">
+                                    <span class="chip bg-color">JavaWEB</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1156,7 +1154,7 @@ daovoice('update');
         repo: 'lxwise.github.io',
         owner: 'lxwise',
         admin: "lxwise",
-        id: '2020-05-10T14-26-45',
+        id: '2020-05-10T15-03-07',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1188,15 +1186,22 @@ daovoice('update');
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/8.jpg" class="responsive-img" alt="Response对象&amp;&amp;ServletContext对象复习（八）">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">Response对象&amp;&amp;ServletContext对象复习（八）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1234567891011121314151617title: Response对象&amp;&amp;ServletContext对象复习（八）author: echodate: 2020-05-10 15:13:07img:top:co
+                            [TOC]
+今日内容1. HTTP协议：响应消息
+2. Response对象
+3. ServletContext对象
+HTTP协议：1. 请求消息：客户端发送给服务器端的数据
+    * 数据格式：
+        1. 请求行
+     
                         
                     </div>
                     <div class="publish-info">
@@ -1205,11 +1210,31 @@ daovoice('update');
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            echo
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JavaWEB/" class="post-category">
+                                    JavaWEB
+                                </a>
+                            
+                            <a href="/categories/JavaWEB/复习/" class="post-category">
+                                    复习
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/复习/">
+                        <span class="chip bg-color">复习</span>
+                    </a>
+                    
+                    <a href="/tags/JavaWEB/">
+                        <span class="chip bg-color">JavaWEB</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1225,15 +1250,23 @@ daovoice('update');
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/8.jpg" class="responsive-img" alt="Tomcat&amp;&amp;Servlet复习（六）">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">Tomcat&amp;&amp;Servlet复习（六）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            12345678910111213141516171819title: Tomcat&amp;&amp;Servlet复习（六）author: echodate: 2020-05-10 14:53:07img:top:cover:cover
+                            [TOC]
+今日内容1. web相关概念回顾
+2. web服务器软件：Tomcat
+3. Servlet入门学习
+web相关概念回顾1. 软件架构
+    1. C/S：客户端/服务器端
+    2. B/S：浏览器/服务器端
+
+2. 资源
                         
                     </div>
                     <div class="publish-info">
@@ -1242,11 +1275,39 @@ daovoice('update');
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            echo
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JavaWEB/" class="post-category">
+                                    JavaWEB
+                                </a>
+                            
+                            <a href="/categories/JavaWEB/Tomcat/" class="post-category">
+                                    Tomcat
+                                </a>
+                            
+                            <a href="/categories/JavaWEB/Tomcat/复习/" class="post-category">
+                                    复习
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/复习/">
+                        <span class="chip bg-color">复习</span>
+                    </a>
+                    
+                    <a href="/tags/JavaWEB/">
+                        <span class="chip bg-color">JavaWEB</span>
+                    </a>
+                    
+                    <a href="/tags/Tomcat/">
+                        <span class="chip bg-color">Tomcat</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1434,7 +1495,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             |&nbsp;Theme&nbsp;<a href="https://github.com/lxwise" target="_blank">Echo</a>
             <br>
             
-            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">38.8k</span>&nbsp;字
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">37k</span>&nbsp;字
             
             
             
